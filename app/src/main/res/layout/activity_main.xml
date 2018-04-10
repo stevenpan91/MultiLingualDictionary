@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="localhost.steven.myapplication.MainActivity">
 
+    <!--
     <TextView
         android:id="@+id/sample_text"
         android:layout_width="wrap_content"
@@ -15,7 +16,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/mainscreen"
@@ -27,5 +34,5 @@
         android:paddingTop="16dp"
         tools:context="localhost.steven.chemicalengineerhelper.CalculateScreen">
     </RelativeLayout>
-
+</ScrollView>
 </android.support.constraint.ConstraintLayout>
