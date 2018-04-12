@@ -88,14 +88,20 @@ public class MainActivity extends AppCompatActivity {
         *   N = Noun
         *   V = Verb
         *   A = Adjective
+        *   Adv = Adverb
+        *   Pr = Pronoun
+        *   Prp = Preposition
+        *   Con = Conjunction
+        *   Int = Interjection
+        *   Ar = Article
         *   0 = None (phrase)
-        * 3. Tense/Declination
+        * 3. Tense/Declension
         *   Tense
         *       Pa = Past
         *       Pr = Present
         *       Fu = Future
         *   ---------------
-        *   Declination
+        *   Declension
         *       Nom = Nominative Case
         *       Gen = Genitive Case
         *       Dat = Dative Case
@@ -116,18 +122,29 @@ public class MainActivity extends AppCompatActivity {
 
     public void TraverseJSON(String searchText){
         if(searchText!=null && searchText!="" && searchText.length()>0) {
-            JSONArray KeyResult = new JSONArray();
+            ArrayList<JSONArray> KeyResults = new ArrayList<JSONArray>();//used to store all paths
+            JSONArray KeyResult = new JSONArray();//used to check path
 
             //This will get all keys
-            GetKeysFromJSONFile(KeyResult, searchText, "ChineseInit.json");
-            GetKeysFromJSONFile(KeyResult, searchText, "RussianInit.json");
+            GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "EnglishInit.json");
+            //GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "ChineseInit.json");
+            GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "MongolianInit.json");
+            GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "RussianInit.json");
 
             //Now to connect strings by key
-            //for (int i = 0; i < KeyResult.length(); i++){
+            for (int i = 0; i < KeyResults.size(); i++){ //go through all key paths
+                KeyResult=KeyResults.get(i);
                 JSONArray SearchResult = new JSONArray();
                 StringBuilder SearchResultString = new StringBuilder();
-                SearchResultString.append("Chn: ");
-                GetAllElementsByKey(SearchResultString, KeyResult, "ChineseInit.json");
+
+                SearchResultString.append("Eng: ");
+                GetAllElementsByKey(SearchResultString, KeyResult, "EnglishInit.json");
+                SearchResultString.append(", ");
+                //SearchResultString.append("Chn: ");
+                //GetAllElementsByKey(SearchResultString, KeyResult, "ChineseInit.json");
+                SearchResultString.append(", ");
+                SearchResultString.append("Mng: ");
+                GetAllElementsByKey(SearchResultString, KeyResult, "MongolianInit.json");
                 SearchResultString.append(", ");
                 SearchResultString.append("Rus: ");
                 GetAllElementsByKey(SearchResultString, KeyResult, "RussianInit.json");
@@ -136,15 +153,15 @@ public class MainActivity extends AppCompatActivity {
                     SearchResult.put(SearchResultString.toString());
                 }
                 AddToResultList(SearchResult);
-            //}
+            }
         }
     }
 
-    public void GetKeysFromJSONFile(JSONArray KeyResult,String searchText,String jsonFileName){
+    public void GetKeysFromJSONFile(ArrayList<JSONArray>KeyResults,JSONArray KeyResult,String searchText,String jsonFileName){
         JSONObject thisJSONObject;
         try {
             thisJSONObject = new JSONObject(loadJSONFromAsset(this, jsonFileName));
-            CheckAllKeysOfJSONObject(KeyResult,thisJSONObject, searchText);
+            CheckAllKeysOfJSONObject(KeyResults,KeyResult,thisJSONObject, searchText,0);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -156,30 +173,14 @@ public class MainActivity extends AppCompatActivity {
         try {
             thisJSONObject = new JSONObject(loadJSONFromAsset(this, jsonFileName));
             JSONArray KeyResultCheck = new JSONArray();
-            //for(int i=0;i<KeyResult.length();i++) {
-            int i = KeyResult.length()-1; //get last key to check through
-                CheckAllElementsByKey(SearchResultString, thisJSONObject, KeyResult.getString(i),KeyResultCheck);
-                //CheckAllElementsByKey(SearchResultString, thisJSONObject, KeyResult);
-            //}
+            CheckAllElementsByKey(SearchResultString, thisJSONObject,KeyResult,0);
 
-            boolean checkFailed=false;
-            if(KeyResultCheck.length()==KeyResult.length()){
-                for(int j=0; j<KeyResultCheck.length(); j++){
-                    if(!KeyResultCheck.getString(j).equals(KeyResult.getString(j)))
-                        checkFailed=true;
-                }
-
-                if(checkFailed)
-                    SearchResultString.setLength(0); //clear string builder
-            }
-            else
-                SearchResultString.setLength(0); //clear string builder
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
-    public void CheckAllElementsByKey(StringBuilder returnString, JSONObject thisJSONObject, String theKey,JSONArray KeyResultCheck){
+    public void CheckAllElementsByKey(StringBuilder returnString, JSONObject thisJSONObject,JSONArray KeyResult, int recursionDepth){
         try {
 
             JSONArray theseJSONKeys = thisJSONObject.names();
@@ -188,12 +189,12 @@ public class MainActivity extends AppCompatActivity {
                 String thisKey = theseJSONKeys.getString(i); //get actual key
                 Object testType = thisJSONObject.get(thisKey); //get the object at key
 
-                KeyResultCheck.put(thisKey);
+                String thisKeyResult = KeyResult.getString(recursionDepth);
+                if(thisKey.equals(thisKeyResult)) {
+                    if (testType instanceof JSONObject) {
+                        CheckAllElementsByKey(returnString, (JSONObject) thisJSONObject.get(thisKey),KeyResult,recursionDepth+1);
+                    }
 
-                if (testType instanceof JSONObject) {
-                    CheckAllElementsByKey(returnString, (JSONObject) thisJSONObject.get(thisKey), theKey, KeyResultCheck);
-                }
-                if(thisKey.equals(theKey)) {
                     //if it is an array, go through array
                     if (testType instanceof JSONArray) {
 
@@ -209,10 +210,6 @@ public class MainActivity extends AppCompatActivity {
                         returnString.append(thisJSONObject.getString(thisKey));
                     }
                 }
-                else{
-                    //at this point if the key is not equal then clear keycheck
-                    KeyResultCheck=new JSONArray();
-                }
             }
         }
         catch (JSONException e) {
@@ -220,20 +217,38 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void CheckAllKeysOfJSONObject(JSONArray returnArray, JSONObject thisJSONObject, String searchText){
+    public void ClearJSONArray(JSONArray theJSONArray){
+        int initialLength = theJSONArray.length(); //store initial length because it will decrease
+        for (int i=0; i<initialLength;i++)
+            theJSONArray.remove(0); //keep popping off the original one
+    }
+    public static boolean isNumeric(String str)
+    {
+        try
+        {
+            double d = Double.parseDouble(str);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    public void CheckAllKeysOfJSONObject(ArrayList<JSONArray> returnArrays,JSONArray returnArray, JSONObject thisJSONObject, String searchText,int recursionDepth){
         //JSONArray returnArray=new JSONArray();
         try {
 
             JSONArray theseJSONKeys = thisJSONObject.names();
             for (int i = 0; i < theseJSONKeys.length(); i++) { //go through all keys
                 String thisKey = theseJSONKeys.getString(i); //get actual key
-                if(!JSONArrayContains(returnArray,thisKey)) {
+                if(!JSONArrayContains(returnArray,thisKey) && !(recursionDepth==0 && !isNumeric(thisKey))) {
                     Object testType = thisJSONObject.get(thisKey); //get the object at key
                     returnArray.put(thisKey);//get path no matter what
 
                     //if the object has names of its own, check recursively
                     if (testType instanceof JSONObject) {
-                        CheckAllKeysOfJSONObject(returnArray, (JSONObject) thisJSONObject.get(thisKey), searchText);
+                        CheckAllKeysOfJSONObject(returnArrays,returnArray, (JSONObject) thisJSONObject.get(thisKey), searchText,recursionDepth+1);
                     }
 
                     //if code reaches below two sentinels there are no more objects
@@ -242,27 +257,38 @@ public class MainActivity extends AppCompatActivity {
                     if (testType instanceof JSONArray) {
 
                         JSONArray thisElement = thisJSONObject.getJSONArray(thisKey);
-
+                        boolean searchFailed=true;
                         for (int j = 0; j < thisElement.length(); j++) {
 
-                            if (!thisElement.get(j).toString().contains(searchText)) {// && !JSONArrayContains(returnArray,thisElement.get(j).toString())) {
+                            if (thisElement.get(j).toString().contains(searchText) ) {// && !JSONArrayContains(returnArray,thisElement.get(j).toString())) {
                                 //returnArray.put(thisElement.get(j));
                                 //returnArray.put(thisKey);
-                                returnArray = new JSONArray();//clear array
+                                searchFailed=false;
+
                             }
 
                         }
+                        if(!searchFailed && !ListOfJSONArrayContains(returnArrays,returnArray))
+                            returnArrays.add(cloneJSONArray(returnArray)); //if keyset was not deleted add it using clone (pass by value)
+
+                        //ClearJSONArray(returnArray);//= new JSONArray();//clear array
+
                     }
 
                     if (testType instanceof String) {
                         String thisString = thisJSONObject.getString(thisKey);
-                        if (!thisString.contains(searchText)) { //&& !JSONArrayContains(returnArray,thisString)){
+                        if (thisString.contains(searchText) && !ListOfJSONArrayContains(returnArrays,returnArray)) { //&& !JSONArrayContains(returnArray,thisString)){
                             //returnArray.put(thisString);
                             //returnArray.put(thisKey);
-                            returnArray = new JSONArray();//clear array
+                            returnArrays.add(cloneJSONArray(returnArray)); //if keyset was not deleted add it
+
                         }
 
+                        //ClearJSONArray(returnArray);//=new JSONArray();//clear array
+
                     }
+
+                    returnArray.remove(returnArray.length()-1); //remove last element
                 }
             }
         }
@@ -270,6 +296,18 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         //return returnArray;
+    }
+
+    public JSONArray cloneJSONArray(JSONArray sourceArray){
+        JSONArray cloneArray = new JSONArray();
+        try {
+            for (int i=0;i < sourceArray.length(); i++)
+                cloneArray.put(sourceArray.getString(i));
+        }
+        catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return cloneArray;
     }
 
     public boolean JSONArrayContains(JSONArray theJSONArray,String checkString){
@@ -281,6 +319,27 @@ public class MainActivity extends AppCompatActivity {
             }
             catch (JSONException e) {
                 e.printStackTrace();
+            }
+        }
+        return retVal;
+    }
+
+    public boolean ListOfJSONArrayContains(ArrayList<JSONArray> theJSONArrays, JSONArray checkJSONArray){
+        boolean retVal=false;
+        for(int i=0; i<theJSONArrays.size(); i++){
+            boolean matches=true;
+            JSONArray thisJSONArray=theJSONArrays.get(i);
+            if(thisJSONArray.length()==checkJSONArray.length()) {
+                for (int j = 0; j < thisJSONArray.length(); j++) {
+                    try {
+                        if (!thisJSONArray.get(j).equals(checkJSONArray.get(j)))
+                            matches=false;
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if(matches)
+                    retVal=true;
             }
         }
         return retVal;

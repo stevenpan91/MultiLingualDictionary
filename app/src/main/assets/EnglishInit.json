@@ -9,6 +9,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "74": {
+      "WAr00": {
+        "Words": [
+          "la"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "143": {
+      "WAr00": {
+        "Words": [
+          "les"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "559": {
+      "WAr00": {
+        "Words": [
+          "el"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "2": {
@@ -21,6 +57,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "41": {
+      "WPrp00": {
+        "Words": [
+          "de"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "955": {
+      "WPrp00": {
+        "Words": [
+          "del"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "3": {
@@ -33,6 +93,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "97": {
+      "WCon00": {
+        "Words": [
+          "et"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "276": {
+      "WCon00": {
+        "Words": [
+          "y"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "686": {
+      "WCon00": {
+        "Words": [
+          "u"
+        ],
+        "Pronunciation": "",
+        "Definition": "Possibly abbreviation for German 'und' for 'and'",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "4": {
@@ -57,6 +153,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "128": {
+      "WPrp00": {
+        "Words": [
+          "en"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "6": {
@@ -69,6 +177,102 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "37": {
+      "WPrAccSi": {
+        "Words": [
+          "me"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "44": {
+      "WPrNomPl": {
+        "Words": [
+          "we"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "85": {
+      "WPrAccPl": {
+        "Words": [
+          "us"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "66": {
+      "WPrGenPl": {
+        "Words": [
+          "our"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "515": {
+      "WNGenSi": {
+        "Words": [
+          "mine"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "35": {
+      "WPrGenSi": {
+        "Words": [
+          "my"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "250": {
+      "WNRefSi": {
+        "Words": [
+          "myself"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "572": {
+      "WPrNomSi": {
+        "Words": [
+          "te"
+        ],
+        "Pronunciation": "",
+        "Definition": "Latin for 'I'",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "7": {
@@ -81,6 +285,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "24": {
+      "WPrNomSi": {
+        "Words": [
+          "which"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "8": {
@@ -93,6 +309,102 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "33": {
+      "WVPaPl": {
+        "Words": [
+          "were"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "13": {
+      "WVPrSi": {
+        "Words": [
+          "is"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "36": {
+      "WVPrPl": {
+        "Words": [
+          "are"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "127": {
+      "WVPrSi": {
+        "Words": [
+          "am"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "19": {
+      "WVPrSi": {
+        "Words": [
+          "be"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "48": {
+      "WVPaSi": {
+        "Words": [
+          "been"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "122": {
+      "WVProgSi": {
+        "Words": [
+          "being"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "402": {
+      "WVPrSi": {
+        "Words": [
+          "est"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "9": {
@@ -105,20 +417,45 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "10": {
+      "WPrGenSi": {
+        "Words": [
+          "his"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "29": {
+      "WPrAccSi": {
+        "Words": [
+          "him"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "114": {
+      "WNRefSi": {
+        "Words": [
+          "himself"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
-  "10": {
-    "WPrGenSi": {
-      "Words": [
-        "his"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
+
   "11": {
     "WPrNomSi": {
       "Words": [
@@ -129,24 +466,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "75": {
+      "WPrGenSi": {
+        "Words": [
+          "its"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "12": {
     "WPrp00": {
       "Words": [
         "with"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "13": {
-    "WVPrSi": {
-      "Words": [
-        "is"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -189,6 +526,54 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "61": {
+      "WVPrSi": {
+        "Words": [
+          "has"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "25": {
+      "WVPrPl": {
+        "Words": [
+          "have"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "207": {
+      "WVProgSi": {
+        "Words": [
+          "having"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "598": {
+      "WVPrSi": {
+        "Words": [
+          "hath"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "17": {
@@ -201,6 +586,54 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "60": {
+      "WPrGenSi": {
+        "Words": [
+          "your"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "476": {
+      "WNAccSi": {
+        "Words": [
+          "ye"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "524": {
+      "WPrNomPl": {
+        "Words": [
+          "nous"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "528": {
+      "WPrNomSi": {
+        "Words": [
+          "sie"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "18": {
@@ -213,20 +646,21 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "961": {
+      "WNNomSi": {
+        "Words": [
+          "non"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
-  "19": {
-    "WVPrSi": {
-      "Words": [
-        "be"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
+
   "20": {
     "WPrp00": {
       "Words": [
@@ -237,6 +671,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "72": {
+      "WPrp00": {
+        "Words": [
+          "upon"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "21": {
@@ -261,6 +707,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "32": {
+      "WPrNomSi": {
+        "Words": [
+          "she"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "285": {
+      "WNRefSi": {
+        "Words": [
+          "herself"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "23": {
@@ -273,32 +743,21 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "749": {
+      "WPrp00": {
+        "Words": [
+          "beside"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
-  "24": {
-    "WPrNomSi": {
-      "Words": [
-        "which"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "25": {
-    "WVPrPl": {
-      "Words": [
-        "have"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
+
   "26": {
     "WCon00": {
       "Words": [
@@ -321,6 +780,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "232": {
+      "WPrp00": {
+        "Words": [
+          "er"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "520": {
+      "WCon00": {
+        "Words": [
+          "e"
+        ],
+        "Pronunciation": "",
+        "Definition": "Latin for 'from'",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "28": {
@@ -333,20 +816,21 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "91": {
+      "WPrNomPl": {
+        "Words": [
+          "these"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
-  "29": {
-    "WPrAccSi": {
-      "Words": [
-        "him"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
+
   "30": {
     "WCon00": {
       "Words": [
@@ -357,36 +841,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "237": {
+      "WCon00": {
+        "Words": [
+          "however"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "31": {
     "WANomPl": {
       "Words": [
         "all"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "32": {
-    "WPrNomSi": {
-      "Words": [
-        "she"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "33": {
-    "WVPaPl": {
-      "Words": [
-        "were"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -405,42 +877,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "35": {
-    "WPrGenSi": {
-      "Words": [
-        "my"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "36": {
-    "WVPrPl": {
-      "Words": [
-        "are"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "37": {
-    "WPrAccSi": {
-      "Words": [
-        "me"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "40": {
+      "WPrGenPl": {
+        "Words": [
+          "their"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "45": {
+      "WPrAccPl": {
+        "Words": [
+          "them"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "255": {
+      "WNRefPl": {
+        "Words": [
+          "themselves"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "38": {
@@ -453,6 +925,31 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "307": {
+      "WAdv00": {
+        "Words": [
+          "thus"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+
+    "349": {
+      "WAdv00": {
+        "Words": [
+          "therefore"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "39": {
@@ -465,30 +962,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "40": {
-    "WPrGenPl": {
-      "Words": [
-        "their"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "41": {
-    "WPrp00": {
-      "Words": [
-        "de"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "168": {
+      "WAdv00": {
+        "Words": [
+          "once"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "99": {
+      "WANomSi": {
+        "Words": [
+          "first"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "42": {
@@ -501,6 +998,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "87": {
+      "WAr00": {
+        "Words": [
+          "a"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "43": {
@@ -513,30 +1022,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "44": {
-    "WPrNomPl": {
-      "Words": [
-        "we"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "45": {
-    "WPrAccPl": {
-      "Words": [
-        "them"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "126": {
+      "WVPrSi": {
+        "Words": [
+          "say"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      },
+      "467": {
+        "WVProgSi": {
+          "Words": [
+            "saying"
+          ],
+          "Pronunciation": "",
+          "Definition": "",
+          "Case/Tense": "",
+          "Part Of Speech": "",
+          "Example Sentences": ""
+        }
+      }
+    },
+    "319": {
+      "WVPrSi": {
+        "Words": [
+          "says"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "46": {
@@ -549,6 +1070,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "241": {
+      "WPrGenSi": {
+        "Words": [
+          "whose"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "190": {
+      "WNDatSi": {
+        "Words": [
+          "whom"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "47": {
@@ -561,30 +1106,55 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "48": {
-    "WVPaSi": {
-      "Words": [
-        "been"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "49": {
-    "WVPrSi": {
-      "Words": [
-        "will"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+
+    "49": {
+      "WVPrSi": {
+        "Words": [
+          "will"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "113": {
+      "WVPrSi": {
+        "Words": [
+          "shall"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "659": {
+      "P000": {
+        "Words": [
+          "won't"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "953": {
+      "WVPrSi": {
+        "Words": [
+          "wouldn't"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "50": {
@@ -705,32 +1275,57 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "84": {
+      "WVPaSi": {
+        "Words": [
+          "did"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "247": {
+      "WVPrSi": {
+        "Words": [
+          "does"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "538": {
+      "WVProgSi": {
+        "Words": [
+          "doing"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "529": {
+      "WVPaSi": {
+        "Words": [
+          "didn't"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
-  "60": {
-    "WPrGenSi": {
-      "Words": [
-        "your"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "61": {
-    "WVPrSi": {
-      "Words": [
-        "has"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
+
   "62": {
     "WNNomSi": {
       "Words": [
@@ -741,6 +1336,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "103": {
+      "WNNomPl": {
+        "Words": [
+          "men"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "687": {
+      "WNGenSi": {
+        "Words": [
+          "man's"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "63": {
@@ -765,6 +1384,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "81": {
+      "WVPrSi": {
+        "Words": [
+          "can"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "454": {
+      "WVPrSi": {
+        "Words": [
+          "can't"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "65": {
@@ -777,18 +1420,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "66": {
-    "WPrGenPl": {
-      "Words": [
-        "our"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "853": {
+      "WPrNomPl": {
+        "Words": [
+          "al"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "259": {
+      "WNNomPl": {
+        "Words": [
+          "others"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "67": {
@@ -825,6 +1480,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "392": {
+      "WAdv00": {
+        "Words": [
+          "really"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "70": {
@@ -851,58 +1518,10 @@
       "Example Sentences": ""
     }
   },
-  "72": {
-    "WPrp00": {
-      "Words": [
-        "upon"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "73": {
     "WVNomSi": {
       "Words": [
         "may"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "74": {
-    "WAr00": {
-      "Words": [
-        "la"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "75": {
-    "WPrGenSi": {
-      "Words": [
-        "its"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "76": {
-    "WAdv00": {
-      "Words": [
-        "only"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -933,6 +1552,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "231": {
+      "WANomSi": {
+        "Words": [
+          "small"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "79": {
@@ -959,18 +1590,6 @@
       "Example Sentences": ""
     }
   },
-  "81": {
-    "WVPrSi": {
-      "Words": [
-        "can"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "82": {
     "WVPaSi": {
       "Words": [
@@ -981,6 +1600,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "119": {
+      "WVPrSi": {
+        "Words": [
+          "make"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "390": {
+      "WVProgSi": {
+        "Words": [
+          "making"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "545": {
+      "WVPrSi": {
+        "Words": [
+          "makes"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "83": {
@@ -993,48 +1648,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "84": {
-    "WVPaSi": {
-      "Words": [
-        "did"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "85": {
-    "WPrAccPl": {
-      "Words": [
-        "us"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "450": {
+      "WVPrSi": {
+        "Words": [
+          "ought"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "86": {
     "WANomSi": {
       "Words": [
         "such"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "87": {
-    "WAr00": {
-      "Words": [
-        "a"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -1053,6 +1684,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "574": {
+      "WANomSi": {
+        "Words": [
+          "greater"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "759": {
+      "WANomSi": {
+        "Words": [
+          "greatest"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "89": {
@@ -1079,18 +1734,6 @@
       "Example Sentences": ""
     }
   },
-  "91": {
-    "WPrNomPl": {
-      "Words": [
-        "these"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "92": {
     "WANomPl": {
       "Words": [
@@ -1101,6 +1744,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "308": {
+      "WANomPl": {
+        "Words": [
+          "2"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "354": {
+      "WANomSi": {
+        "Words": [
+          "second"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "93": {
@@ -1113,6 +1780,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "173": {
+      "WVPaSi": {
+        "Words": [
+          "saw"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "209": {
+      "WVPaSi": {
+        "Words": [
+          "seen"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "656": {
+      "WVProgSi": {
+        "Words": [
+          "seeing"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "94": {
@@ -1125,6 +1828,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "311": {
+      "WPrp00": {
+        "Words": [
+          "above"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "95": {
@@ -1137,24 +1852,48 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "215": {
+      "WVPaSi": {
+        "Words": [
+          "knew"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "316": {
+      "WVPaSi": {
+        "Words": [
+          "known"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "629": {
+      "WVPrSi": {
+        "Words": [
+          "knows"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "96": {
     "WANomSi": {
       "Words": [
         "much"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "97": {
-    "WCon00": {
-      "Words": [
-        "et"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -1173,18 +1912,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "99": {
-    "WANomSi": {
-      "Words": [
-        "first"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "669": {
+      "WAdv00": {
+        "Words": [
+          "afterwards"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "100": {
@@ -1209,6 +1948,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "527": {
+      "WPrp00": {
+        "Words": [
+          "below"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "139": {
+      "WPrp00": {
+        "Words": [
+          "under"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "890": {
+      "WPrp00": {
+        "Words": [
+          "beneath"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "102": {
@@ -1221,18 +1996,43 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "103": {
-    "WNNomPl": {
-      "Words": [
-        "men"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+
+    "123": {
+      "WANomSi": {
+        "Words": [
+          "well"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "212": {
+      "WANomSi": {
+        "Words": [
+          "better"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "246": {
+      "WANomSi": {
+        "Words": [
+          "best"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "104": {
@@ -1305,6 +2105,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "198": {
+      "WNNomPl": {
+        "Words": [
+          "days"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "110": {
@@ -1341,42 +2153,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "113": {
-    "WVPrSi": {
-      "Words": [
-        "shall"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "114": {
-    "WNRefSi": {
-      "Words": [
-        "himself"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "115": {
-    "WVPaSi": {
-      "Words": [
-        "came"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "115": {
+      "WVPaSi": {
+        "Words": [
+          "came"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "116": {
@@ -1389,6 +2177,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "971": {
+      "WNNomSi": {
+        "Words": [
+          "path"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "821": {
+      "WNNomPl": {
+        "Words": [
+          "ways"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "117": {
@@ -1401,24 +2213,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "845": {
+      "WPrp00": {
+        "Words": [
+          "sans"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "118": {
     "WNNomSi": {
       "Words": [
         "life"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "119": {
-    "WVPrSi": {
-      "Words": [
-        "make"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -1437,6 +2249,54 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "141": {
+      "WVPaSi": {
+        "Words": [
+          "went"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "211": {
+      "WVProgSi": {
+        "Words": [
+          "going"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "320": {
+      "WVPaSi": {
+        "Words": [
+          "gone"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "727": {
+      "WVPrSi": {
+        "Words": [
+          "goes"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "121": {
@@ -1449,30 +2309,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "122": {
-    "WVProgSi": {
-      "Words": [
-        "being"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "123": {
-    "WANomSi": {
-      "Words": [
-        "well"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "453": {
+      "WANomSi": {
+        "Words": [
+          "longer"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "124": {
@@ -1499,42 +2347,6 @@
       "Example Sentences": ""
     }
   },
-  "126": {
-    "WVPrSi": {
-      "Words": [
-        "say"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "127": {
-    "WVPrSi": {
-      "Words": [
-        "am"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "128": {
-    "WPrp00": {
-      "Words": [
-        "en"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "129": {
     "WAdv00": {
       "Words": [
@@ -1545,6 +2357,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "149": {
+      "WAdv00": {
+        "Words": [
+          "also"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "130": {
@@ -1557,6 +2381,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "348": {
+      "WANomSi": {
+        "Words": [
+          "several"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "596": {
+      "WANomSi": {
+        "Words": [
+          "various"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "131": {
@@ -1607,18 +2455,6 @@
       "Example Sentences": ""
     }
   },
-  "135": {
-    "WNNomPl": {
-      "Words": [
-        "people"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "136": {
     "WVPrSi": {
       "Words": [
@@ -1629,6 +2465,29 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "142": {
+      "WVPaSi": {
+        "Words": [
+          "thought"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      },
+    "622": {
+      "WVProgSi": {
+        "Words": [
+          "thinking"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "137": {
@@ -1655,58 +2514,10 @@
       "Example Sentences": ""
     }
   },
-  "139": {
-    "WPrp00": {
-      "Words": [
-        "under"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "140": {
     "WANomSi": {
       "Words": [
         "last"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "141": {
-    "WVPaSi": {
-      "Words": [
-        "went"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "142": {
-    "WVPaSi": {
-      "Words": [
-        "thought"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "143": {
-    "WAr00": {
-      "Words": [
-        "les"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -1725,6 +2536,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "202": {
+      "WVPrSi": {
+        "Words": [
+          "find"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "145": {
@@ -1737,6 +2560,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "177": {
+      "WVPaSi": {
+        "Words": [
+          "took"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "839": {
+      "WVPrSi": {
+        "Words": [
+          "takes"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "487": {
+      "WVProgSi": {
+        "Words": [
+          "taking"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "146": {
@@ -1773,18 +2632,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "149": {
-    "WAdv00": {
-      "Words": [
-        "also"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "651": {
+      "WNNomPl": {
+        "Words": [
+          "places"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "568": {
+      "WVPaSi": {
+        "Words": [
+          "placed"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "178": {
+      "WVPrSi": {
+        "Words": [
+          "put"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "150": {
@@ -1797,6 +2680,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "346": {
+      "WVProgSi": {
+        "Words": [
+          "during"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "151": {
@@ -1809,6 +2704,43 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+
+    "76": {
+      "WAdv00": {
+        "Words": [
+          "only"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "670": {
+      "WAdv00": {
+        "Words": [
+          "merely"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "674": {
+      "WANomSi": {
+        "Words": [
+          "mere"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "152": {
@@ -1857,7 +2789,20 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "551": {
+      "WCon00": {
+        "Words": [
+          "although"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
+  }
   },
   "156": {
     "WANomSi": {
@@ -1881,6 +2826,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "275": {
+      "WNNomSi": {
+        "Words": [
+          "year"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "158": {
@@ -1893,6 +2850,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "199": {
+      "WVPaSi": {
+        "Words": [
+          "got"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "704": {
+      "WVProgSi": {
+        "Words": [
+          "getting"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "159": {
@@ -1917,6 +2898,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "191": {
+      "WNNomSi": {
+        "Words": [
+          "thing"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "597": {
+      "WNNomSi": {
+        "Words": [
+          "object"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "161": {
@@ -1929,6 +2934,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "226": {
+      "WVPaSi": {
+        "Words": [
+          "gave"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "684": {
+      "WVProgSi": {
+        "Words": [
+          "giving"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "239": {
+      "WVPrSi": {
+        "Words": [
+          "given"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "162": {
@@ -2003,18 +3044,6 @@
       "Example Sentences": ""
     }
   },
-  "168": {
-    "WAdv00": {
-      "Words": [
-        "once"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "169": {
     "WANomSi": {
       "Words": [
@@ -2063,18 +3092,6 @@
       "Example Sentences": ""
     }
   },
-  "173": {
-    "WVPaSi": {
-      "Words": [
-        "saw"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "174": {
     "WANomSi": {
       "Words": [
@@ -2085,6 +3102,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "720": {
+      "WANomSi": {
+        "Words": [
+          "third"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "175": {
@@ -2103,30 +3132,6 @@
     "WANomSi": {
       "Words": [
         "always"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "177": {
-    "WVPaSi": {
-      "Words": [
-        "took"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "178": {
-    "WVPrSi": {
-      "Words": [
-        "put"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -2157,6 +3162,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "620": {
+      "WVPaSi": {
+        "Words": [
+          "loved"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "181": {
@@ -2265,30 +3282,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "190": {
-    "WNDatSi": {
-      "Words": [
-        "whom"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "191": {
-    "WNNomSi": {
-      "Words": [
-        "thing"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "205": {
+      "WVPaSi": {
+        "Words": [
+          "told"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "192": {
@@ -2313,24 +3318,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "477": {
+      "WANomSi": {
+        "Words": [
+          "further"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "194": {
     "WNNomSi": {
       "Words": [
         "lord"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "195": {
-    "WVPaSi": {
-      "Words": [
-        "seemed"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -2361,30 +3366,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "198": {
-    "WNNomPl": {
-      "Words": [
-        "days"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "199": {
-    "WVPaSi": {
-      "Words": [
-        "got"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "919": {
+      "WANomSi": {
+        "Words": [
+          "complete"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "200": {
@@ -2403,18 +3396,6 @@
     "WANomSi": {
       "Words": [
         "both"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "202": {
-    "WVPrSi": {
-      "Words": [
-        "find"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -2447,18 +3428,6 @@
       "Example Sentences": ""
     }
   },
-  "205": {
-    "WVPaSi": {
-      "Words": [
-        "told"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "206": {
     "WVPrSi": {
       "Words": [
@@ -2469,36 +3438,36 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "207": {
-    "WVProgSi": {
-      "Words": [
-        "having"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "387": {
+      "WVProgSi": {
+        "Words": [
+          "looking"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "911": {
+      "WVPrSi": {
+        "Words": [
+          "looks"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "208": {
     "WVPaSi": {
       "Words": [
         "heard"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "209": {
-    "WVPaSi": {
-      "Words": [
-        "seen"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -2517,30 +3486,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "211": {
-    "WVProgSi": {
-      "Words": [
-        "going"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "212": {
-    "WANomSi": {
-      "Words": [
-        "better"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "891": {
+      "WVPrSi": {
+        "Words": [
+          "allow"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "213": {
@@ -2559,18 +3516,6 @@
     "WNNomSi": {
       "Words": [
         "moment"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "215": {
-    "WVPaSi": {
-      "Words": [
-        "knew"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -2697,18 +3642,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "226": {
-    "WVPaSi": {
-      "Words": [
-        "gave"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "240": {
+      "WNNomSi": {
+        "Words": [
+          "word"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "227": {
@@ -2751,30 +3696,6 @@
     "WVPrSi": {
       "Words": [
         "cannot"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "231": {
-    "WANomSi": {
-      "Words": [
-        "small"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "232": {
-    "WPrp00": {
-      "Words": [
-        "er"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -2831,66 +3752,6 @@
       "Example Sentences": ""
     }
   },
-  "237": {
-    "WCon00": {
-      "Words": [
-        "however"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "238": {
-    "WVPaSi": {
-      "Words": [
-        "brought"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "239": {
-    "WVPrSi": {
-      "Words": [
-        "given"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "240": {
-    "WNNomSi": {
-      "Words": [
-        "word"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "241": {
-    "WPrGenSi": {
-      "Words": [
-        "whose"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "242": {
     "WVPrSi": {
       "Words": [
@@ -2901,6 +3762,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "254": {
+      "WVPaSi": {
+        "Words": [
+          "used"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "243": {
@@ -2939,58 +3812,10 @@
       "Example Sentences": ""
     }
   },
-  "246": {
-    "WANomSi": {
-      "Words": [
-        "best"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "247": {
-    "WVPrSi": {
-      "Words": [
-        "does"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "248": {
     "WNNomSi": {
       "Words": [
         "morning"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "249": {
-    "WCon00": {
-      "Words": [
-        "till"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "250": {
-    "WNRefSi": {
-      "Words": [
-        "myself"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -3023,42 +3848,6 @@
       "Example Sentences": ""
     }
   },
-  "253": {
-    "WVPaSi": {
-      "Words": [
-        "turned"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "254": {
-    "WVPaSi": {
-      "Words": [
-        "used"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "255": {
-    "WNRefPl": {
-      "Words": [
-        "themselves"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "256": {
     "WAdv00": {
       "Words": [
@@ -3081,36 +3870,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "249": {
+      "WCon00": {
+        "Words": [
+          "till"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "258": {
     "WNNomSi": {
       "Words": [
         "power"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "259": {
-    "WNNomPl": {
-      "Words": [
-        "others"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "260": {
-    "WVPaSi": {
-      "Words": [
-        "felt"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -3129,6 +3906,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "341": {
+      "WNAccSi": {
+        "Words": [
+          "thee"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "296": {
+      "WPrGenSi": {
+        "Words": [
+          "thy"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "262": {
@@ -3147,18 +3948,6 @@
     "WNNomSi": {
       "Words": [
         "mother"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "264": {
-    "WVPaSi": {
-      "Words": [
-        "began"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -3237,6 +4026,31 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "775": {
+      "WVPaSi": {
+        "Words": [
+          "formed"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+
+    "962": {
+      "WNNomPl": {
+        "Words": [
+          "forms"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "271": {
@@ -3273,36 +4087,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "565": {
+      "WAdv00": {
+        "Words": [
+          "certainly"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "274": {
     "WNNomSi": {
       "Words": [
         "death"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "275": {
-    "WNNomSi": {
-      "Words": [
-        "year"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "276": {
-    "WCon00": {
-      "Words": [
-        "y"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -3347,18 +4149,6 @@
       "Example Sentences": ""
     }
   },
-  "280": {
-    "WVPaSi": {
-      "Words": [
-        "stood"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "281": {
     "WNNomSi": {
       "Words": [
@@ -3383,34 +4173,10 @@
       "Example Sentences": ""
     }
   },
-  "283": {
-    "WVPaSi": {
-      "Words": [
-        "sent"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "284": {
     "WANomSi": {
       "Words": [
         "half"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "285": {
-    "WNRefSi": {
-      "Words": [
-        "herself"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -3429,6 +4195,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "353": {
+      "WNNomPl": {
+        "Words": [
+          "friends"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "287": {
@@ -3465,6 +4243,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "398": {
+      "WVPaSi": {
+        "Words": [
+          "kept"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "290": {
@@ -3489,6 +4279,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "394": {
+      "WVPrSi": {
+        "Words": [
+          "mean"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "977": {
+      "WNNomSi": {
+        "Words": [
+          "meaning"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "750": {
+      "WVPaSi": {
+        "Words": [
+          "meant"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "292": {
@@ -3539,30 +4365,6 @@
       "Example Sentences": ""
     }
   },
-  "296": {
-    "WPrGenSi": {
-      "Words": [
-        "thy"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "297": {
-    "WVPaSi": {
-      "Words": [
-        "received"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "298": {
     "WANomSi": {
       "Words": [
@@ -3587,18 +4389,6 @@
       "Example Sentences": ""
     }
   },
-  "300": {
-    "WVPaSi": {
-      "Words": [
-        "passed"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "301": {
     "WNNomSi": {
       "Words": [
@@ -3609,6 +4399,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "135": {
+      "WNNomPl": {
+        "Words": [
+          "people"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "580": {
+      "WNNomPl": {
+        "Words": [
+          "persons"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "302": {
@@ -3621,18 +4435,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "303": {
-    "WNNomPl": {
-      "Words": [
-        "feet"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "739": {
+      "WVProgSi": {
+        "Words": [
+          "reading"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "304": {
@@ -3669,30 +4483,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "307": {
-    "WAdv00": {
-      "Words": [
-        "thus"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "308": {
-    "WANomPl": {
-      "Words": [
-        "2"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "393": {
+      "WNNomSi": {
+        "Words": [
+          "town"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "309": {
@@ -3711,18 +4513,6 @@
     "WANomSi": {
       "Words": [
         "alone"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "311": {
-    "WPrp00": {
-      "Words": [
-        "above"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -3753,6 +4543,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "925": {
+      "WANomSi": {
+        "Words": [
+          "higher"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "314": {
@@ -3779,58 +4581,10 @@
       "Example Sentences": ""
     }
   },
-  "316": {
-    "WVPaSi": {
-      "Words": [
-        "known"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "317": {
-    "WVPaSi": {
-      "Words": [
-        "met"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "318": {
     "WNNomSi": {
       "Words": [
         "english"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "319": {
-    "WVPrSi": {
-      "Words": [
-        "says"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "320": {
-    "WVPaSi": {
-      "Words": [
-        "gone"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -4029,6 +4783,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "861": {
+      "WVPrSi": {
+        "Words": [
+          "leaves"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "337": {
@@ -4079,18 +4845,6 @@
       "Example Sentences": ""
     }
   },
-  "341": {
-    "WNAccSi": {
-      "Words": [
-        "thee"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "342": {
     "WVPrSi": {
       "Words": [
@@ -4125,24 +4879,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "760": {
+      "WVPaSi": {
+        "Words": [
+          "wished"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "345": {
     "WNNomSi": {
       "Words": [
         "business"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "346": {
-    "WVProgSi": {
-      "Words": [
-        "during"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -4161,30 +4915,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "348": {
-    "WANomSi": {
-      "Words": [
-        "several"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "349": {
-    "WAdv00": {
-      "Words": [
-        "therefore"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "698": {
+      "WAdv00": {
+        "Words": [
+          "generally"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "350": {
@@ -4209,42 +4951,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "352": {
-    "WVPaSi": {
-      "Words": [
-        "held"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "353": {
-    "WNNomPl": {
-      "Words": [
-        "friends"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "354": {
-    "WANomSi": {
-      "Words": [
-        "second"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "811": {
+      "WVPrSi": {
+        "Words": [
+          "lie"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "535": {
+      "WVPaSi": {
+        "Words": [
+          "laid"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "355": {
@@ -4269,6 +4999,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "936": {
+      "WVPrSi": {
+        "Words": [
+          "spoken"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "785": {
+      "WVProgSi": {
+        "Words": [
+          "speaking"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "357": {
@@ -4331,18 +5085,6 @@
       "Example Sentences": ""
     }
   },
-  "362": {
-    "WVPaSi": {
-      "Words": [
-        "cried"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "363": {
     "WNNomSi": {
       "Words": [
@@ -4377,6 +5119,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "370": {
+      "WVPaSi": {
+        "Words": [
+          "became"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "366": {
@@ -4419,30 +5173,6 @@
     "WNNomPl": {
       "Words": [
         "terms"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "370": {
-    "WVPaSi": {
-      "Words": [
-        "became"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "371": {
-    "WVPaSi": {
-      "Words": [
-        "replied"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -4523,18 +5253,6 @@
       "Example Sentences": ""
     }
   },
-  "378": {
-    "WVProgSi": {
-      "Words": [
-        "following"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "379": {
     "WNNomSi": {
       "Words": [
@@ -4557,6 +5275,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "260": {
+      "WVPaSi": {
+        "Words": [
+          "felt"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "470": {
+      "WVProgSi": {
+        "Words": [
+          "feeling"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "381": {
@@ -4631,18 +5373,6 @@
       "Example Sentences": ""
     }
   },
-  "387": {
-    "WVProgSi": {
-      "Words": [
-        "looking"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "388": {
     "WNNomSi": {
       "Words": [
@@ -4667,58 +5397,10 @@
       "Example Sentences": ""
     }
   },
-  "390": {
-    "WVProgSi": {
-      "Words": [
-        "making"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "391": {
     "WNNomSi": {
       "Words": [
         "soul"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "392": {
-    "WAdv00": {
-      "Words": [
-        "really"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "393": {
-    "WNNomSi": {
-      "Words": [
-        "town"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "394": {
-    "WVPrSi": {
-      "Words": [
-        "mean"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -4763,18 +5445,6 @@
       "Example Sentences": ""
     }
   },
-  "398": {
-    "WVPaSi": {
-      "Words": [
-        "kept"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "399": {
     "WNNomSi": {
       "Words": [
@@ -4803,18 +5473,6 @@
     "WANomSi": {
       "Words": [
         "five"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "402": {
-    "WVPrSi": {
-      "Words": [
-        "est"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -4893,6 +5551,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "523": {
+      "WVProgSi": {
+        "Words": [
+          "living"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "409": {
@@ -4965,18 +5635,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "415": {
-    "WVPrSi": {
-      "Words": [
-        "seems"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "770": {
+      "WPrp00": {
+        "Words": [
+          "c"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "416": {
@@ -5085,24 +5755,36 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "253": {
+      "WVPaSi": {
+        "Words": [
+          "turned"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "885": {
+      "WVProgSi": {
+        "Words": [
+          "turning"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "425": {
     "WNNomSi": {
       "Words": [
         "party"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "426": {
-    "WVPaSi": {
-      "Words": [
-        "followed"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -5133,6 +5815,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "238": {
+      "WVPaSi": {
+        "Words": [
+          "brought"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "429": {
@@ -5181,24 +5875,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "352": {
+      "WVPaSi": {
+        "Words": [
+          "held"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "433": {
     "WANomSi": {
       "Words": [
         "dark"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "434": {
-    "WVPaSi": {
-      "Words": [
-        "written"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -5253,6 +5947,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "719": {
+      "WVPaSi": {
+        "Words": [
+          "showed"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "960": {
+      "WVPaSi": {
+        "Words": [
+          "shown"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "439": {
@@ -5265,6 +5983,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "490": {
+      "WNNomSi": {
+        "Words": [
+          "view"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "440": {
@@ -5387,18 +6117,6 @@
       "Example Sentences": ""
     }
   },
-  "450": {
-    "WVPrSi": {
-      "Words": [
-        "ought"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "451": {
     "WNNomSi": {
       "Words": [
@@ -5409,6 +6127,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "761": {
+      "WNNomPl": {
+        "Words": [
+          "lines"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "452": {
@@ -5423,46 +6153,10 @@
       "Example Sentences": ""
     }
   },
-  "453": {
-    "WANomSi": {
-      "Words": [
-        "longer"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "454": {
-    "WVPrSi": {
-      "Words": [
-        "can't"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "455": {
     "WNNomSi": {
       "Words": [
         "france"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "456": {
-    "WVPaSi": {
-      "Words": [
-        "paid"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -5591,18 +6285,6 @@
       "Example Sentences": ""
     }
   },
-  "467": {
-    "WVProgSi": {
-      "Words": [
-        "saying"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "468": {
     "WNNomSi": {
       "Words": [
@@ -5613,24 +6295,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "994": {
+      "WVPaSi": {
+        "Words": [
+          "marked"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "469": {
     "WVPrSi": {
       "Words": [
         "change"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "470": {
-    "WVProgSi": {
-      "Words": [
-        "feeling"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -5699,30 +6381,6 @@
       "Example Sentences": ""
     }
   },
-  "476": {
-    "WNAccSi": {
-      "Words": [
-        "ye"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "477": {
-    "WANomSi": {
-      "Words": [
-        "further"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "478": {
     "WNNomSi": {
       "Words": [
@@ -5757,6 +6415,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "317": {
+      "WVPaSi": {
+        "Words": [
+          "met"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "876": {
+      "WVProgSi": {
+        "Words": [
+          "meeting"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "481": {
@@ -5781,6 +6463,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "582": {
+      "WANomSi": {
+        "Words": [
+          "glad"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "483": {
@@ -5793,24 +6487,36 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "195": {
+      "WVPaSi": {
+        "Words": [
+          "seemed"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "415": {
+      "WVPrSi": {
+        "Words": [
+          "seems"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "484": {
     "WNNomSi": {
       "Words": [
         "act"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "485": {
-    "WAdv00": {
-      "Words": [
-        "suddenly"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -5829,18 +6535,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "487": {
-    "WVProgSi": {
-      "Words": [
-        "taking"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "280": {
+      "WVPaSi": {
+        "Words": [
+          "stood"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "627": {
+      "WVProgSi": {
+        "Words": [
+          "standing"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "488": {
@@ -5859,18 +6577,6 @@
     "WNNomSi": {
       "Words": [
         "rose"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "490": {
-    "WNNomSi": {
-      "Words": [
-        "view"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -5985,6 +6691,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "833": {
+      "WVPaSi": {
+        "Words": [
+          "supposed"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "500": {
@@ -6051,18 +6769,6 @@
     "WNNomSi": {
       "Words": [
         "sound"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "506": {
-    "WNNomSi": {
-      "Words": [
-        "agreement"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -6167,18 +6873,6 @@
       "Example Sentences": ""
     }
   },
-  "515": {
-    "WNGenSi": {
-      "Words": [
-        "mine"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "516": {
     "WAdv00": {
       "Words": [
@@ -6227,18 +6921,6 @@
       "Example Sentences": ""
     }
   },
-  "520": {
-    "WCon00": {
-      "Words": [
-        "e"
-      ],
-      "Pronunciation": "",
-      "Definition": "Latin for 'from'",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "521": {
     "WNNomSi": {
       "Words": [
@@ -6255,30 +6937,6 @@
     "WVPrSi": {
       "Words": [
         "cut"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "523": {
-    "WVProgSi": {
-      "Words": [
-        "living"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "524": {
-    "WPrNomPl": {
-      "Words": [
-        "nous"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -6311,42 +6969,6 @@
       "Example Sentences": ""
     }
   },
-  "527": {
-    "WPrp00": {
-      "Words": [
-        "below"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "528": {
-    "WPrNomSi": {
-      "Words": [
-        "sie"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "529": {
-    "WVPaSi": {
-      "Words": [
-        "didn't"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "530": {
     "WNNomSi": {
       "Words": [
@@ -6369,6 +6991,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "963": {
+      "WANomSi": {
+        "Words": [
+          "lower"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "532": {
@@ -6407,18 +7041,6 @@
       "Example Sentences": ""
     }
   },
-  "535": {
-    "WVPaSi": {
-      "Words": [
-        "laid"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "536": {
     "WNNomSi": {
       "Words": [
@@ -6441,18 +7063,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "538": {
-    "WVProgSi": {
-      "Words": [
-        "doing"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "456": {
+      "WVPaSi": {
+        "Words": [
+          "paid"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "539": {
@@ -6465,6 +7087,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "300": {
+      "WVPaSi": {
+        "Words": [
+          "passed"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "540": {
@@ -6503,34 +7137,10 @@
       "Example Sentences": ""
     }
   },
-  "543": {
-    "WVPaSi": {
-      "Words": [
-        "led"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "544": {
     "WVPrSi": {
       "Words": [
         "charge"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "545": {
-    "WVPrSi": {
-      "Words": [
-        "makes"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -6549,6 +7159,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "935": {
+      "WVProgSi": {
+        "Words": [
+          "running"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "602": {
+      "WVPaSi": {
+        "Words": [
+          "ran"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "547": {
@@ -6599,18 +7233,6 @@
       "Example Sentences": ""
     }
   },
-  "551": {
-    "WCon00": {
-      "Words": [
-        "although"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "552": {
     "WVPrSi": {
       "Words": [
@@ -6621,6 +7243,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "297": {
+      "WVPaSi": {
+        "Words": [
+          "received"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "553": {
@@ -6695,18 +7329,6 @@
       "Example Sentences": ""
     }
   },
-  "559": {
-    "WAr00": {
-      "Words": [
-        "el"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "560": {
     "WANomSi": {
       "Words": [
@@ -6717,6 +7339,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "999": {
+      "WNNomSi": {
+        "Words": [
+          "importance"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "561": {
@@ -6767,58 +7401,10 @@
       "Example Sentences": ""
     }
   },
-  "565": {
-    "WAdv00": {
-      "Words": [
-        "certainly"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "566": {
-    "WVPaSi": {
-      "Words": [
-        "tried"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "567": {
     "WNNomSi": {
       "Words": [
         "silence"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "568": {
-    "WVPaSi": {
-      "Words": [
-        "placed"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "569": {
-    "WAdv00": {
-      "Words": [
-        "probably"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -6843,42 +7429,6 @@
     "WNNomSi": {
       "Words": [
         "wind"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "572": {
-    "WPrNomSi": {
-      "Words": [
-        "te"
-      ],
-      "Pronunciation": "",
-      "Definition": "Latin for 'I'",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "573": {
-    "WAdv00": {
-      "Words": [
-        "especially"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "574": {
-    "WANomSi": {
-      "Words": [
-        "greater"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -6947,18 +7497,6 @@
       "Example Sentences": ""
     }
   },
-  "580": {
-    "WNNomPl": {
-      "Words": [
-        "persons"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "581": {
     "WVPrSi": {
       "Words": [
@@ -6969,18 +7507,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "582": {
-    "WANomSi": {
-      "Words": [
-        "glad"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "283": {
+      "WVPaSi": {
+        "Words": [
+          "sent"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "583": {
@@ -7089,6 +7627,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "303": {
+      "WNNomPl": {
+        "Words": [
+          "feet"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "592": {
@@ -7127,54 +7677,6 @@
       "Example Sentences": ""
     }
   },
-  "595": {
-    "WVPaSi": {
-      "Words": [
-        "wrote"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "596": {
-    "WANomSi": {
-      "Words": [
-        "various"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "597": {
-    "WNNomSi": {
-      "Words": [
-        "object"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "598": {
-    "WVPrSi": {
-      "Words": [
-        "hath"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "599": {
     "WANomSi": {
       "Words": [
@@ -7187,34 +7689,10 @@
       "Example Sentences": ""
     }
   },
-  "600": {
-    "WNNomPl": {
-      "Words": [
-        "minutes"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "601": {
     "WANomSi": {
       "Words": [
         "wild"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "602": {
-    "WVPaSi": {
-      "Words": [
-        "ran"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -7257,6 +7735,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "978": {
+      "WVPaSi": {
+        "Words": [
+          "smiled"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "606": {
@@ -7299,18 +7789,6 @@
     "WAdv00": {
       "Words": [
         "hardly"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "610": {
-    "WNNomSi": {
-      "Words": [
-        "beginning"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -7427,18 +7905,6 @@
       "Example Sentences": ""
     }
   },
-  "620": {
-    "WVPaSi": {
-      "Words": [
-        "loved"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "621": {
     "WVPrSi": {
       "Words": [
@@ -7449,36 +7915,36 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "622": {
-    "WVProgSi": {
-      "Words": [
-        "thinking"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "378": {
+      "WVProgSi": {
+        "Words": [
+          "following"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "426": {
+      "WVPaSi": {
+        "Words": [
+          "followed"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "623": {
     "WANomSi": {
       "Words": [
         "plain"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "624": {
-    "WVPaSi": {
-      "Words": [
-        "walked"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -7499,46 +7965,10 @@
       "Example Sentences": ""
     }
   },
-  "626": {
-    "WVPaSi": {
-      "Words": [
-        "drew"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "627": {
-    "WVProgSi": {
-      "Words": [
-        "standing"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "628": {
     "WPrp00": {
       "Words": [
         "per"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "629": {
-    "WVPrSi": {
-      "Words": [
-        "knows"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -7605,6 +8035,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "566": {
+      "WVPaSi": {
+        "Words": [
+          "tried"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "776": {
+      "WVProgSi": {
+        "Words": [
+          "trying"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "635": {
@@ -7629,6 +8083,42 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "434": {
+      "WVPaSi": {
+        "Words": [
+          "written"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "595": {
+      "WVPaSi": {
+        "Words": [
+          "wrote"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "693": {
+      "WVProgSi": {
+        "Words": [
+          "writing"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "637": {
@@ -7761,6 +8251,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "664": {
+      "WNNomSi": {
+        "Words": [
+          "appearance"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "648": {
@@ -7779,30 +8281,6 @@
     "WNNomSi": {
       "Words": [
         "joy"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "650": {
-    "WANomSi": {
-      "Words": [
-        "broken"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "651": {
-    "WNNomPl": {
-      "Words": [
-        "places"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -7859,18 +8337,6 @@
       "Example Sentences": ""
     }
   },
-  "656": {
-    "WVProgSi": {
-      "Words": [
-        "seeing"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "657": {
     "WNNomSi": {
       "Words": [
@@ -7887,18 +8353,6 @@
     "WVPrSi": {
       "Words": [
         "please"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "659": {
-    "P000": {
-      "Words": [
-        "won't"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -7955,18 +8409,6 @@
       "Example Sentences": ""
     }
   },
-  "664": {
-    "WNNomSi": {
-      "Words": [
-        "appearance"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "665": {
     "WNNomSi": {
       "Words": [
@@ -8001,36 +8443,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "873": {
+      "WAdv00": {
+        "Words": [
+          "simply"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "668": {
     "WNNomSi": {
       "Words": [
         "battle"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "669": {
-    "WAdv00": {
-      "Words": [
-        "afterwards"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "670": {
-    "WAdv00": {
-      "Words": [
-        "merely"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -8067,18 +8497,6 @@
     "WVPaSi": {
       "Words": [
         "learned"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "674": {
-    "WANomSi": {
-      "Words": [
-        "mere"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -8195,46 +8613,10 @@
       "Example Sentences": ""
     }
   },
-  "684": {
-    "WVProgSi": {
-      "Words": [
-        "giving"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "685": {
     "WNNomSi": {
       "Words": [
         "court"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "686": {
-    "WCon00": {
-      "Words": [
-        "u"
-      ],
-      "Pronunciation": "",
-      "Definition": "Possibly abbreviation for German 'und' for 'and'",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "687": {
-    "WNGenSi": {
-      "Words": [
-        "man's"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -8303,18 +8685,6 @@
       "Example Sentences": ""
     }
   },
-  "693": {
-    "WVProgSi": {
-      "Words": [
-        "writing"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "694": {
     "WNNomSi": {
       "Words": [
@@ -8349,24 +8719,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "506": {
+      "WNNomSi": {
+        "Words": [
+          "agreement"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "697": {
     "WAdv00": {
       "Words": [
         "slowly"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "698": {
-    "WAdv00": {
-      "Words": [
-        "generally"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -8427,18 +8797,6 @@
     "WNNomSi": {
       "Words": [
         "dit"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "704": {
-    "WVProgSi": {
-      "Words": [
-        "getting"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -8565,6 +8923,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "624": {
+      "WVPaSi": {
+        "Words": [
+          "walked"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "715": {
@@ -8615,30 +8985,6 @@
       "Example Sentences": ""
     }
   },
-  "719": {
-    "WVPaSi": {
-      "Words": [
-        "showed"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "720": {
-    "WANomSi": {
-      "Words": [
-        "third"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "721": {
     "WVPrSi": {
       "Words": [
@@ -8663,18 +9009,6 @@
       "Example Sentences": ""
     }
   },
-  "723": {
-    "WVPaSi": {
-      "Words": [
-        "expected"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "724": {
     "WVPrSi": {
       "Words": [
@@ -8687,34 +9021,10 @@
       "Example Sentences": ""
     }
   },
-  "725": {
-    "WVPaSi": {
-      "Words": [
-        "laughed"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "726": {
     "WAdv00": {
       "Words": [
         "entirely"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "727": {
-    "WVPrSi": {
-      "Words": [
-        "goes"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -8805,6 +9115,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "878": {
+      "WAdv00": {
+        "Words": [
+          "perfectly"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "735": {
@@ -8847,18 +9169,6 @@
     "WNNomSi": {
       "Words": [
         "cost"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "739": {
-    "WVProgSi": {
-      "Words": [
-        "reading"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -8975,30 +9285,6 @@
       "Example Sentences": ""
     }
   },
-  "749": {
-    "WPrp00": {
-      "Words": [
-        "beside"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "750": {
-    "WVPaSi": {
-      "Words": [
-        "meant"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "751": {
     "WNNomSi": {
       "Words": [
@@ -9069,6 +9355,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "923": {
+      "WVPaSi": {
+        "Words": [
+          "provided"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "757": {
@@ -9087,42 +9385,6 @@
     "WNNomSi": {
       "Words": [
         "individual"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "759": {
-    "WANomSi": {
-      "Words": [
-        "greatest"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "760": {
-    "WVPaSi": {
-      "Words": [
-        "wished"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "761": {
-    "WNNomPl": {
-      "Words": [
-        "lines"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -9201,36 +9463,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "485": {
+      "WAdv00": {
+        "Words": [
+          "suddenly"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "768": {
     "WNNomSi": {
       "Words": [
         "field"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "769": {
-    "WVProgSi": {
-      "Words": [
-        "waiting"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "770": {
-    "WPrp00": {
-      "Words": [
-        "c"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -9279,30 +9529,6 @@
     "WAdv00": {
       "Words": [
         "quickly"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "775": {
-    "WVPaSi": {
-      "Words": [
-        "formed"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "776": {
-    "WVProgSi": {
-      "Words": [
-        "trying"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -9393,24 +9619,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "769": {
+      "WVProgSi": {
+        "Words": [
+          "waiting"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "784": {
     "WNNomSi": {
       "Words": [
         "tom"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "785": {
-    "WVProgSi": {
-      "Words": [
-        "speaking"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -9441,6 +9667,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "817": {
+      "WVProgSi": {
+        "Words": [
+          "sitting"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "788": {
@@ -9501,6 +9739,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "264": {
+      "WVPaSi": {
+        "Words": [
+          "began"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "610": {
+      "WNNomSi": {
+        "Words": [
+          "beginning"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "793": {
@@ -9543,18 +9805,6 @@
     "P000": {
       "Words": [
         "that's"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "797": {
-    "WVPaSi": {
-      "Words": [
-        "broke"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -9657,6 +9907,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "362": {
+      "WVPaSi": {
+        "Words": [
+          "cried"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "806": {
@@ -9711,18 +9973,6 @@
     "WNNomPl": {
       "Words": [
         "troops"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "811": {
-    "WVPrSi": {
-      "Words": [
-        "lie"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -9791,18 +10041,6 @@
       "Example Sentences": ""
     }
   },
-  "817": {
-    "WVProgSi": {
-      "Words": [
-        "sitting"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "818": {
     "WNNomSi": {
       "Words": [
@@ -9831,18 +10069,6 @@
     "WNNomSi": {
       "Words": [
         "rome"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "821": {
-    "WNNomPl": {
-      "Words": [
-        "ways"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -9983,18 +10209,6 @@
       "Example Sentences": ""
     }
   },
-  "833": {
-    "WVPaSi": {
-      "Words": [
-        "supposed"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "834": {
     "WANomSi": {
       "Words": [
@@ -10055,18 +10269,6 @@
       "Example Sentences": ""
     }
   },
-  "839": {
-    "WVPrSi": {
-      "Words": [
-        "takes"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "840": {
     "WNNomSi": {
       "Words": [
@@ -10119,18 +10321,6 @@
     "WANomSi": {
       "Words": [
         "eight"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "845": {
-    "WPrp00": {
-      "Words": [
-        "sans"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -10223,18 +10413,6 @@
       "Example Sentences": ""
     }
   },
-  "853": {
-    "WPrNomPl": {
-      "Words": [
-        "al"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "854": {
     "WVPaSi": {
       "Words": [
@@ -10269,6 +10447,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "626": {
+      "WVPaSi": {
+        "Words": [
+          "drew"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "857": {
@@ -10317,18 +10507,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
-    }
-  },
-  "861": {
-    "WVPrSi": {
-      "Words": [
-        "leaves"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
+    },
+    "569": {
+      "WAdv00": {
+        "Words": [
+          "probably"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "862": {
@@ -10463,18 +10653,6 @@
       "Example Sentences": ""
     }
   },
-  "873": {
-    "WAdv00": {
-      "Words": [
-        "simply"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "874": {
     "WNNomSi": {
       "Words": [
@@ -10499,34 +10677,10 @@
       "Example Sentences": ""
     }
   },
-  "876": {
-    "WVProgSi": {
-      "Words": [
-        "meeting"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "877": {
     "WANomSi": {
       "Words": [
         "pleasant"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "878": {
-    "WAdv00": {
-      "Words": [
-        "perfectly"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -10545,6 +10699,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "725": {
+      "WVPaSi": {
+        "Words": [
+          "laughed"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "880": {
@@ -10607,18 +10773,6 @@
       "Example Sentences": ""
     }
   },
-  "885": {
-    "WVProgSi": {
-      "Words": [
-        "turning"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "886": {
     "WNNomSi": {
       "Words": [
@@ -10659,30 +10813,6 @@
     "WVPaSi": {
       "Words": [
         "fixed"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "890": {
-    "WPrp00": {
-      "Words": [
-        "beneath"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "891": {
-    "WVPrSi": {
-      "Words": [
-        "allow"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -10737,6 +10867,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "371": {
+      "WVPaSi": {
+        "Words": [
+          "replied"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "896": {
@@ -10773,6 +10915,30 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "650": {
+      "WANomSi": {
+        "Words": [
+          "broken"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
+    },
+    "797": {
+      "WVPaSi": {
+        "Words": [
+          "broke"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "899": {
@@ -10905,24 +11071,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "600": {
+      "WNNomPl": {
+        "Words": [
+          "minutes"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "910": {
     "WNNomSi": {
       "Words": [
         "courage"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "911": {
-    "WVPrSi": {
-      "Words": [
-        "looks"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -11015,18 +11181,6 @@
       "Example Sentences": ""
     }
   },
-  "919": {
-    "WANomSi": {
-      "Words": [
-        "complete"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "920": {
     "WVPrSi": {
       "Words": [
@@ -11063,34 +11217,10 @@
       "Example Sentences": ""
     }
   },
-  "923": {
-    "WVPaSi": {
-      "Words": [
-        "provided"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "924": {
     "WANomSi": {
       "Words": [
         "pale"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "925": {
-    "WANomSi": {
-      "Words": [
-        "higher"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -11133,6 +11263,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "985": {
+      "WNNomSi": {
+        "Words": [
+          "movement"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "929": {
@@ -11193,36 +11335,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "543": {
+      "WVPaSi": {
+        "Words": [
+          "led"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "934": {
     "WNGenSi": {
       "Words": [
         "father's"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "935": {
-    "WVProgSi": {
-      "Words": [
-        "running"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "936": {
-    "WVPrSi": {
-      "Words": [
-        "spoken"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -11423,34 +11553,10 @@
       "Example Sentences": ""
     }
   },
-  "953": {
-    "WVPrSi": {
-      "Words": [
-        "wouldn't"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "954": {
     "WANomSi": {
       "Words": [
         "ones"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "955": {
-    "W??": {
-      "Words": [
-        "WPrp00"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -11499,54 +11605,6 @@
     "WANomSi": {
       "Words": [
         "aux"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "960": {
-    "WVPaSi": {
-      "Words": [
-        "shown"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "961": {
-    "WNNomSi": {
-      "Words": [
-        "non"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "962": {
-    "WNNomPl": {
-      "Words": [
-        "forms"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "963": {
-    "WANomSi": {
-      "Words": [
-        "lower"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -11639,18 +11697,6 @@
       "Example Sentences": ""
     }
   },
-  "971": {
-    "WNNomSi": {
-      "Words": [
-        "path"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "972": {
     "WVPrSi": {
       "Words": [
@@ -11697,36 +11743,24 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "573": {
+      "WAdv00": {
+        "Words": [
+          "especially"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "976": {
     "WNNomSi": {
       "Words": [
         "pride"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "977": {
-    "WNNomSi": {
-      "Words": [
-        "meaning"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "978": {
-    "WVPaSi": {
-      "Words": [
-        "smiled"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -11807,18 +11841,6 @@
       "Example Sentences": ""
     }
   },
-  "985": {
-    "WNNomSi": {
-      "Words": [
-        "movement"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "986": {
     "WVPrSi": {
       "Words": [
@@ -11829,6 +11851,18 @@
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "723": {
+      "WVPaSi": {
+        "Words": [
+          "expected"
+        ],
+        "Pronunciation": "",
+        "Definition": "",
+        "Case/Tense": "",
+        "Part Of Speech": "",
+        "Example Sentences": ""
+      }
     }
   },
   "987": {
@@ -11915,18 +11949,6 @@
       "Example Sentences": ""
     }
   },
-  "994": {
-    "WVPaSi": {
-      "Words": [
-        "marked"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
   "995": {
     "WVPrSi": {
       "Words": [
@@ -11967,18 +11989,6 @@
     "WNNomSi": {
       "Words": [
         "officer"
-      ],
-      "Pronunciation": "",
-      "Definition": "",
-      "Case/Tense": "",
-      "Part Of Speech": "",
-      "Example Sentences": ""
-    }
-  },
-  "999": {
-    "WNNomSi": {
-      "Words": [
-        "importance"
       ],
       "Pronunciation": "",
       "Definition": "",

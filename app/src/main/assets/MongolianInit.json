@@ -1,8 +1,9 @@
+
 {
   "1": {
     "WAr00": {
       "Words": [
-        "the"
+        ""
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -14,7 +15,7 @@
   "2": {
     "WPrp00": {
       "Words": [
-        "of"
+          "ын,-ийн,-оор,-тай,-аар,-өөр,-ээр,тухай"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -26,7 +27,7 @@
   "3": {
     "WCon00": {
       "Words": [
-        "and"
+          "ба,болон,бол,мөн,бөгөөд,түүнчлэн,тэрчлэн,бас"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -38,7 +39,7 @@
   "4": {
     "WPrp00": {
       "Words": [
-        "to"
+         "хүртэл,руу,зүг,өөд,луу,-д"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -50,7 +51,7 @@
   "5": {
     "WPrp00": {
       "Words": [
-        "in"
+        "дотор,дотоод,хураах,үл,-д/-т"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -62,19 +63,52 @@
   "6": {
     "WPrNomSi": {
       "Words": [
-        "I"
+        "би"
       ],
       "Pronunciation": "",
       "Definition": "",
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "WPrAccSi": {
+      "Words": [
+        "би"
+      ],
+      "Pronunciation": "",
+      "Definition": "",
+      "Case/Tense": "",
+      "Part Of Speech": "",
+      "Example Sentences": "",
+      "Notes": "Used to be ID 37"
+    },
+    "WPrNomPl": {
+      "Words": [
+        "we"
+      ],
+      "Pronunciation": "",
+      "Definition": "",
+      "Case/Tense": "",
+      "Part Of Speech": "",
+      "Example Sentences": "",
+      "Notes": "Used to be ID 44"
+    },
+    "WPrAccPl": {
+      "Words": [
+        "us"
+      ],
+      "Pronunciation": "",
+      "Definition": "",
+      "Case/Tense": "",
+      "Part Of Speech": "",
+      "Example Sentences": "",
+      "Notes": "Used to be ID 85"
     }
   },
   "7": {
     "WPrNomSi": {
       "Words": [
-        "that"
+        "энэ,тэр,гэж,аль,тул,үүний,ингэж"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -86,7 +120,7 @@
   "8": {
     "WVPaSi": {
       "Words": [
-        "was"
+        "байсан,билээ,бүлгээ"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -98,19 +132,30 @@
   "9": {
     "WPrNomSi": {
       "Words": [
-        "he"
+        "тэр,эр хүн,эрэгтэй"
       ],
       "Pronunciation": "",
       "Definition": "",
       "Case/Tense": "",
       "Part Of Speech": "",
       "Example Sentences": ""
+    },
+    "WPrAccSi": {
+      "Words": [
+        "тэр,эр хүн,эрэгтэй"
+      ],
+      "Pronunciation": "",
+      "Definition": "",
+      "Case/Tense": "",
+      "Part Of Speech": "",
+      "Example Sentences": "",
+      "Notes": "used to be ID 29"
     }
   },
   "10": {
     "WPrGenSi": {
       "Words": [
-        "his"
+        "түүний,тэр эрэгтэйн"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -122,7 +167,7 @@
   "11": {
     "WPrNomSi": {
       "Words": [
-        "it"
+        "үүн,түүн,тэр,энэ"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -134,7 +179,7 @@
   "12": {
     "WPrp00": {
       "Words": [
-        "with"
+        "хамт,-аар,таарах"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -146,7 +191,7 @@
   "13": {
     "WVPrSi": {
       "Words": [
-        "is"
+        "бол,юм,болох,буюу,байх,буй"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -158,7 +203,7 @@
   "14": {
     "WCon00": {
       "Words": [
-        "for"
+        "-д,төлөө,учраас,төлөөнөө,учир нь"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -170,7 +215,7 @@
   "15": {
     "WCon00": {
       "Words": [
-        "as"
+        "шиг,-аас,адилхан,-аар,ижилхэн,мэт,лугаа"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -182,7 +227,7 @@
   "16": {
     "WVPaSi": {
       "Words": [
-        "had"
+        "бий,байх"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -194,7 +239,7 @@
   "17": {
     "WPrNomSi": {
       "Words": [
-        "you"
+        "та,чи,чамайг,чамд"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -206,7 +251,7 @@
   "18": {
     "WAdv00": {
       "Words": [
-        "not"
+        "үгүй,биш"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -218,7 +263,7 @@
   "19": {
     "WVPrSi": {
       "Words": [
-        "be"
+        "байх,болох"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -230,7 +275,7 @@
   "20": {
     "WPrp00": {
       "Words": [
-        "on"
+        "дээр,дахь"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -242,7 +287,7 @@
   "21": {
     "WPrp00": {
       "Words": [
-        "at"
+        "-аар,дэргэд,-нд"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -254,7 +299,7 @@
   "22": {
     "WPrGenSi": {
       "Words": [
-        "her"
+        "тэр эмэгтэйн,түүний,тэр хүүхний"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -266,7 +311,7 @@
   "23": {
     "WPrp00": {
       "Words": [
-        "by"
+        "-аар,замаар,хавьцаа,хажуу тийш"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -278,7 +323,7 @@
   "24": {
     "WPrNomSi": {
       "Words": [
-        "which"
+        "аль"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -290,7 +335,7 @@
   "25": {
     "WVPrPl": {
       "Words": [
-        "have"
+        "байх,бий"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -302,7 +347,7 @@
   "26": {
     "WCon00": {
       "Words": [
-        "or"
+        "эсвэл,буюу,эсхүл"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -314,7 +359,7 @@
   "27": {
     "WPrp00": {
       "Words": [
-        "from"
+        "-аас,-өөс,-ээс,-оос"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -326,7 +371,7 @@
   "28": {
     "WPrNomSi": {
       "Words": [
-        "this"
+        "энэ"
       ],
       "Pronunciation": "",
       "Definition": "",
@@ -335,7 +380,7 @@
       "Example Sentences": ""
     }
   },
-  "29": {
+  "Disable29": {
     "WPrAccSi": {
       "Words": [
         "him"
@@ -431,7 +476,7 @@
       "Example Sentences": ""
     }
   },
-  "37": {
+  "Disable37": {
     "WPrAccSi": {
       "Words": [
         "me"
@@ -515,7 +560,7 @@
       "Example Sentences": ""
     }
   },
-  "44": {
+  "Disable44": {
     "WPrNomPl": {
       "Words": [
         "we"
@@ -1007,7 +1052,7 @@
       "Example Sentences": ""
     }
   },
-  "85": {
+  "Disable85": {
     "WPrAccPl": {
       "Words": [
         "us"
