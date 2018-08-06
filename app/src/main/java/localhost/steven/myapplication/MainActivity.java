@@ -82,6 +82,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public char[] EnglishLetters={'A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i',
+            'J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r',
+            'S','s','T','t','U','u','V','v','W','w','X','x','Y','y','Z','z'};
+
+    public char[] RussianLetters={'ё','Ё','ъ','Ъ','я','Я','ш','Ш','е','Е','р','Р','т','Т','ы','Ы',
+            'у','У','и','И','о','О','п','П','ю','Ю','щ','Щ','э','Э','а','А',
+            'с','С','д','Д','ф','Ф','г','Г','ч','Ч','й','Й','к','К','л','Л',
+            'ь','Ь','ж','Ж','з','З','х','Х','ц','Ц','в','В','б','Б','н','Н','м','М'};
+
+    public char[] MongolianLetters={'А','а','Б','б','В','в','Г','г','Д','д','Е','е','Ё','ё','Ж','ж',
+            'З','з','И','и','Й','й','К','к','Л','л','М','м','Н','н','О','о',
+            'Ө','ө','П','п','Р','р','С','с','Т','т','У','у','Ү','ү','Ф','ф',
+            'Х','х','Ц','ц','Ч','ч','Ш','ш','Щ','щ','Ъ','ъ','Ы','ы','Ь','ь',
+            'Э','э','Ю','ю','Я','я'};
+
     public void RunSearch(){
         /*Legend
         * Letter position
@@ -172,50 +187,150 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //    }
 
+    public int getLetterIndex(String theWord,int langIndex) {
+        char firstLetter = theWord.charAt(0);
+        switch (langIndex) {
+            case 1:
+                return getLetterIndexFromArray(firstLetter, EnglishLetters);
+
+            case 2:
+                return getLetterIndexFromArray(firstLetter, MongolianLetters);
+
+            case 3:
+                return getLetterIndexFromArray(firstLetter, RussianLetters);
+        }
+        return -1;
+
+    }
+    public int getLetterIndexFromArray(char firstLetter,char[] LetterArray) {
+        int count = 0;
+        for (char letter : LetterArray){
+            if (firstLetter == letter)
+                return count / 2 + 1;
+
+            count += 1;
+        }
+
+
+        return -1;
+    }
+
+    //this file has indices for quick lookup
+    public void GetKeysFromLookupFile(ArrayList<String> KeyResults,String searchText,int langIndex){
+        try {
+            BufferedReader lookup = new BufferedReader(new InputStreamReader(getApplicationContext().getAssets().open("LookupIndex.txt")));
+            String line;
+            while ((line = lookup.readLine()) != null)
+            {
+                String[] keys=line.split("\t");
+                if(keys[0].equals(String.valueOf(langIndex)) && keys[1].equals(String.valueOf(getLetterIndex(searchText,langIndex)))
+                        && keys[3].contains(searchText)
+                        )
+                    KeyResults.add(keys[2]);
+            }
+        }
+        catch(Exception e){
+            //no one cares
+        }
+    }
+
+    public List<Integer> langIndices(String searchText){
+        char firstLetter=searchText.charAt(0);
+        ArrayList<Integer> retArray=new ArrayList<>();
+        for(char c : EnglishLetters)
+            if(c==firstLetter)
+                retArray.add(1);
+
+        for(char c : MongolianLetters)
+            if(c==firstLetter)
+                retArray.add(2);
+
+        for(char c : RussianLetters)
+            if(c==firstLetter)
+                retArray.add(3);
+
+        return retArray;
+    }
+
+    public void GetResultsFromLookupFile(StringBuilder SearchResultString,String KeyResult,int langIndex){
+        try {
+            BufferedReader lookup = new BufferedReader(new InputStreamReader(getApplicationContext().getAssets().open("LookupIndex.txt")));
+            String line;
+            while ((line = lookup.readLine()) != null)
+            {
+                String[] keys=line.split("\t");
+                if(keys[0].equals(String.valueOf(langIndex)) && keys[2].equals(KeyResult))
+                    SearchResultString.append(keys[3]);
+            }
+        }
+        catch(Exception e){
+            //no one cares
+        }
+    }
+
     public void TraverseJSON(String searchText){
         if(searchText!=null && searchText!="" && searchText.length()>0) {
             ArrayList<String> KeyResults = new ArrayList<String>();//used to store all paths
             String KeyResult = "";//used to check path
 
             //This will get all keys
-            GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "EnglishInit.json");
+            for(int langIndex:langIndices(searchText))
+                GetKeysFromLookupFile(KeyResults,searchText,langIndex);//1 is English, 2 is Mongolian, 3 is Russian
+
+            //GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "EnglishInit.json");
             //GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "ChineseInit.json");
-            GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "MongolianInit.json");
-            GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "RussianInit.json");
+            //GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "MongolianInit.json");
+            //GetKeysFromJSONFile(KeyResults,KeyResult, searchText, "RussianInit.json");
 
             //Now to connect strings by key
-            for (int i = 0; i < KeyResults.size(); i++){ //go through all key paths
-                KeyResult=KeyResults.get(i);
-                JSONArray SearchResult = new JSONArray();
-                StringBuilder SearchResultString = new StringBuilder();
 
-                SearchResultString.append("Eng: ");
-                if(true) {
-                    try {
-                        BufferedReader lookup = new BufferedReader(new InputStreamReader(getApplicationContext().getAssets().open("LookupIndex.txt")));
-                        String myFile;
-                        while ((my))
+            try {
+                BufferedReader lookup = new BufferedReader(new InputStreamReader(getApplicationContext().getAssets().open("LookupIndex.txt")));
+                String line;
+                while ((line = lookup.readLine()) != null)
+                {
+                    String[] keys=line.split("\t");
+
+                    for (int i = 0; i < KeyResults.size(); i++){ //go through all key paths
+                        KeyResult=KeyResults.get(i);
+                        JSONArray SearchResult = new JSONArray();
+                        StringBuilder SearchResultString = new StringBuilder();
+
+                        if(keys[0].equals(String.valueOf(langIndex)) && keys[2].equals(KeyResult))
+                            SearchResultString.append(keys[3]);
+
+                        SearchResultString.append("Eng: ");
+                        GetResultsFromLookupFile(SearchResultString,KeyResult,1);
+                        //GetAllElementsByKey(SearchResultString, KeyResult, "EnglishInit.json");
+                        SearchResultString.append(", ");
+
+                        //SearchResultString.append("Chn: ");
+                        //GetAllElementsByKey(SearchResultString, KeyResult, "ChineseInit.json");
+                        //SearchResultString.append(", ");
+
+                        SearchResultString.append("Mng: ");
+                        GetResultsFromLookupFile(SearchResultString,KeyResult,2);
+                        //GetAllElementsByKey(SearchResultString, KeyResult, "MongolianInit.json");
+                        SearchResultString.append(", ");
+
+                        SearchResultString.append("Rus: ");
+                        GetResultsFromLookupFile(SearchResultString,KeyResult,3);
+                        //GetAllElementsByKey(SearchResultString, KeyResult, "RussianInit.json");
+
+                        if (SearchResultString.toString() != "") {
+                            SearchResult.put(SearchResultString.toString());
+                        }
+                        AddToResultList(SearchResult);
                     }
-                    catch(Exception e){
-                        //no one cares
-                    }
-                }else
-                    GetAllElementsByKey(SearchResultString, KeyResult, "EnglishInit.json");
 
-                SearchResultString.append(", ");
-                //SearchResultString.append("Chn: ");
-                //GetAllElementsByKey(SearchResultString, KeyResult, "ChineseInit.json");
-                SearchResultString.append(", ");
-                SearchResultString.append("Mng: ");
-                GetAllElementsByKey(SearchResultString, KeyResult, "MongolianInit.json");
-                SearchResultString.append(", ");
-                SearchResultString.append("Rus: ");
-                GetAllElementsByKey(SearchResultString, KeyResult, "RussianInit.json");
-
-                if (SearchResultString.toString() != "") {
-                    SearchResult.put(SearchResultString.toString());
                 }
-                AddToResultList(SearchResult);
+
+
+
+
+            }
+            catch(Exception e){
+                //no one cares
             }
         }
     }
