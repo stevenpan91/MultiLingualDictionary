@@ -280,15 +280,21 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void TraverseJSON(String searchText){
-        if(searchText!=null && searchText!="" && searchText.length()>0) {
-            ArrayList<Integer> searchTextLangIndices=langIndices(searchText);
+        //if(searchText!=null && searchText!="" && searchText.length()>0) {
+        if(searchText.length()==0) {
+            KeyResultMap = null;
+            KeyResults = null;//used to store all paths
+        }
+        else {
+            ArrayList<Integer> searchTextLangIndices = langIndices(searchText);
             String KeyResult = "";//used to check path
 
             int langStart = 1; //English
             int langEnd = 3;//Russian
 
             //only need to get the keys when the search text is one letter
-            if(searchText.length()<2) {
+
+            if (searchText.length() == 1 && KeyResults == null) { // key finding is very expensive, only do it on the first letter
 
                 KeyResultMap = new HashMap<>();
 
@@ -298,20 +304,20 @@ public class MainActivity extends AppCompatActivity {
                 KeyResults = new ArrayList<String>();//used to store all paths
                 //This will get all keys
                 for (int langIndex : searchTextLangIndices)
-                    GetKeysFromLookupFile(KeyResultMap,KeyResults, searchText, langIndex);//1 is English, 2 is Mongolian, 3 is Russian
+                    GetKeysFromLookupFile(KeyResultMap, KeyResults, searchText, langIndex);//1 is English, 2 is Mongolian, 3 is Russian
 
                 //Now to connect strings by key
-                for (int langIndex = langStart; langIndex <= langEnd; langIndex++){
+                for (int langIndex = langStart; langIndex <= langEnd; langIndex++) {
                     //KeyResultMap.put(langIndex, new HashMap<String, String>()); //new hashmap for each lang
 
                     //When getting the keys the search Text language already has the values added
-                    if(!searchTextLangIndices.contains(langIndex)) {
+                    if (!searchTextLangIndices.contains(langIndex)) {
                         //the language files we're looking in do not match the search text
                         //but instead are target languages
                         //For example we searched in English but now we're looking in Mongolian files
                         //We have to go through all of the Mongolian files
 
-                        for(int eachLetterIndex=1;eachLetterIndex<=getAmountOfLetters(langIndex);eachLetterIndex++) {
+                        for (int eachLetterIndex = 1; eachLetterIndex <= getAmountOfLetters(langIndex); eachLetterIndex++) {
                             CheckThisFile(KeyResultMap, KeyResults, langIndex, String.valueOf(eachLetterIndex));
                         }
 
@@ -319,38 +325,39 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }//go through each lang
 
-                KeyResultsFirstRound=(ArrayList<String>)KeyResults.clone();
-                KeyResultMapFirstRound=(HashMap<Integer,HashMap<String,String>>)KeyResultMap.clone();
+                KeyResultsFirstRound = CloneKeyResults(KeyResults);
+                KeyResultMapFirstRound = CloneKeyResultMap(KeyResultMap);
 
-            }
-            else{
+            } else {
                 //KeyResults have been initialized, eliminate ones without searchText
 
-                KeyResults=(ArrayList<String>)KeyResultsFirstRound.clone();
-                KeyResultMap=(HashMap<Integer,HashMap<String,String>>)KeyResultMapFirstRound.clone();
-                for(int i=0;i<KeyResults.size();i++)
-                {
-                    String thisKeyResult=KeyResults.get(i);
-                    boolean keyRemoved=false;
+                KeyResults = CloneKeyResults(KeyResultsFirstRound);
+                KeyResultMap = CloneKeyResultMap(KeyResultMapFirstRound);
 
-                    for (int langIndex : searchTextLangIndices) {
-                        if (!KeyResultMap.get(langIndex).get(thisKeyResult).contains(searchText)) {
-                            if(KeyResultMap.get(langIndex).containsKey(thisKeyResult)) {
-                                KeyResults.remove(thisKeyResult);
+                //eliminate only if length is greater than 1, otherwise just restore as above
+                if(searchText.length() > 1) {
+                    for (int i = 0; i < KeyResults.size(); i++) {
+                        String thisKeyResult = KeyResults.get(i);
+                        boolean keyRemoved = false;
 
-                                for (int langIndex2 = langStart; langIndex2 <= langEnd; langIndex2++)
-                                    KeyResultMap.get(langIndex2).remove(thisKeyResult);
+                        for (int langIndex : searchTextLangIndices) {
+                            if (!KeyResultMap.get(langIndex).get(thisKeyResult).contains(searchText)) {
+                                if (KeyResultMap.get(langIndex).containsKey(thisKeyResult)) {
+                                    KeyResults.remove(thisKeyResult);
 
-                                keyRemoved=true;
+                                    for (int langIndex2 = langStart; langIndex2 <= langEnd; langIndex2++)
+                                        KeyResultMap.get(langIndex2).remove(thisKeyResult);
+
+                                    keyRemoved = true;
+                                }
                             }
                         }
-                    }
 
-                    if(keyRemoved)
-                        i--; //check the new key at this position
+                        if (keyRemoved)
+                            i--; //check the new key at this position
+                    }
                 }
             }
-
 
 
             for (int i = 0; i < KeyResults.size(); i++) {
@@ -379,6 +386,30 @@ public class MainActivity extends AppCompatActivity {
                 AddToResultList(SearchResult);
             } //put all results in blocks
         }
+        //}
+    }
+
+    public ArrayList<String> CloneKeyResults(ArrayList<String> source){
+        ArrayList<String> target=new ArrayList<>();
+        for(String s:source)
+            target.add(s);
+
+        return target;
+    }
+
+    public HashMap<Integer,HashMap<String,String>> CloneKeyResultMap(HashMap<Integer,HashMap<String,String>> source){
+        HashMap<Integer,HashMap<String,String>> target=new HashMap<>();
+        for(int i: source.keySet()) {
+            target.put(i, new HashMap<String, String>());
+
+            for(String s: source.get(i).keySet()){
+                HashMap<String,String> innerMap=target.get(i);
+                innerMap.put(s,source.get(i).get(s));
+                target.put(i,innerMap);
+            }
+
+        }
+        return target;
     }
 
 
