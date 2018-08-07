@@ -1,0 +1,1 @@
+2	33	7WPrNomSiWords	энэ,тэр,гэж,аль,тул,үүний,ингэж2	33	62103WNNomPlWords	эрчүүд2	33	2891WPrNomPlWords	эдгээр,эд2	33	28WPrNomSiWords	энэ2	33	26WCon00Words	эсвэл,буюу,эсхүл

@@ -1,4 +1,6 @@
 import json
+import os
+import glob
 
 EnglishLetters=['A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i',\
                 'J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r',\
@@ -16,16 +18,20 @@ MongolianLetters=['А','а','Б','б','В','в','Г','г','Д','д','Е','е','�
                   'Х','х','Ц','ц','Ч','ч','Ш','ш','Щ','щ','Ъ','ъ','Ы','ы','Ь','ь',\
                   'Э','э','Ю','ю','Я','я']
 
-def checkEachKey(jsonData,index,thisKey,recDepth,writeFile,langIndex):
+def checkEachKey(jsonData,index,thisKey,recDepth,langIndex):
     #print(recDepth)
     #if(len(jsonData)>0):
     if(isinstance(jsonData,dict)):
         for index in jsonData:
             if(len(jsonData[index])>0):
-                checkEachKey(jsonData[index],index,thisKey+index,recDepth+1,writeFile,langIndex)
+                checkEachKey(jsonData[index],index,thisKey+index,recDepth+1,langIndex)
 
     if(recDepth>=3 and index=="Words" and len(jsonData)>0 and len(jsonData[0])>0):
-        f2.write(str(langIndex)+"\t"+str(getLetterIndex(jsonData[0],langIndex))+"\t"+thisKey+"\t"+jsonData[0]+"\r")
+        letterIndex=getLetterIndex(jsonData[0],langIndex)
+        writeFile=open('LookupIndex'+str(langValue)+"-"+str(letterIndex)+'.txt','a')
+        aggregateIndex.write(str(langIndex)+"\t"+str(letterIndex)+"\t"+thisKey+"\t"+jsonData[0]+"\r")
+        writeFile.write(str(langIndex)+"\t"+str(letterIndex)+"\t"+thisKey+"\t"+jsonData[0]+"\r")
+        writeFile.close()
 
 def getLetterIndex(theWord,langIndex):
     firstLetter=theWord[0]
@@ -45,21 +51,29 @@ def getLetterIndexFromArray(firstLetter,LetterArray):
         count+=1
 
 if __name__=='__main__':
-    
-    f1= open("EnglishInit.json",'r')
-    f2= open('LookupIndex.txt','w')
-    dataEng=json.load(f1)
-    checkEachKey(dataEng,'','',0,f2,1)
 
-    f3=open("MongolianInit.json",'r')
-    dataMg=json.load(f3)
-    checkEachKey(dataMg,'','',0,f2,2)
+    for indexFile in glob.glob("LookupIndex*"):
+        os.remove(indexFile)
 
-    f4=open("RussianInit.json",'r')
-    dataRu=json.load(f4)
-    checkEachKey(dataRu,'','',0,f2,3)
-    
-    f1.close()
-    f2.close()
-    f3.close()
-    f4.close()
+    languages=3
+    files=[]
+
+    aggregateIndex=open('LookupIndex.txt','w')
+
+    for count in range(0,languages):
+        langValue=count+1
+
+        if(langValue==1):
+            files.append(open("EnglishInit.json",'r'))
+        elif(langValue==2):
+            files.append(open("MongolianInit.json",'r'))
+        elif(langValue==3):
+            files.append(open("RussianInit.json",'r'))
+
+        data=json.load(files[count])
+        checkEachKey(data,'','',0,langValue)
+
+    for f in files:
+        f.close()
+
+    aggregateIndex.close()
