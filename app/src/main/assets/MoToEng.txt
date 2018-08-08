@@ -235,7 +235,7 @@
 эхлэх	v. begin,to start,to begin
 авсан	v. got
 алхах	v. walk
-жишээ	n.example
+жишээ	n. example
 хөнгөвчлөх	v. ease
 цаас	n. paper
 бүлэг	n. group
@@ -518,12 +518,12 @@
 үрийн	n. seed
 ая	n. tone
 нэгдэхийг	n. join
-санал болгож байна	v.suggest
-цэвэр	v.clean
+санал болгож байна	v. suggest
+цэвэр	v. clean
 завсарлага	n. break
 эмэгтэй	n. lady,woman
 талбай	n. yard,squire
-босох	v.rise,to get up
+босох	v. rise,to get up
 муу	adj. bad
 цохилт	v. blow
 газрын тос	n. oil
@@ -1306,7 +1306,7 @@ cap	n. month
 таван өнцөгт	n. pentagon
 тэгш өнцөгт	n. rectangle
 хүний бие	n. parts of the body
-алга	n.palm, is not
+алга	n. palm, is not
 ам	n. mouth
 бугуй	n. wrist
 булчин	n. calf
@@ -1665,7 +1665,7 @@ cap	n. month
 хуурай	adj. dry
 хүрэн	adj. brown
 хэцүү	adj. difficult
-хямдхан	adj.cheap
+хямдхан	adj. cheap
 цайвар шаргал	n. beige
 цастай	adj. snowy
 цөөхен	adj. few
@@ -1888,7 +1888,7 @@ cap	n. month
 ёс	n. ceremony, procedure
 эрхэмлэх	v. prefer, preference
 дээдлэх	v. prefer
-уламжлал	v.tradition, legacy
+уламжлал	v. tradition, legacy
 соёл	n. culture
 заншил	n. custom, habit, ritual
 багаар	adj. less
@@ -2208,7 +2208,7 @@ cap	n. month
 өрөг	n. game
 бий	v. have
 дэлгэх	v. display
-атаархах	v.envy
+атаархах	v. envy
 улайх	v. confess, flush, redden
 цатгалан	adj. satiated
 элэгсэг	adj. loving

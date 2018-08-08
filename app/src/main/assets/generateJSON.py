@@ -8,11 +8,13 @@ if __name__=='__main__':
     dataRu={}
     with open('MoToEng.txt') as f:
         for line in f:
-            components=line.split('\t')
-            comp_right=components[1].replace(' ','\t').split('\t')
-            components=[components[0]]
-            for c in comp_right:
-                components.append(c.replace('\n','')) #remove newlines
+            print(line)
+            components=line.replace('\n','').replace(". ",".\t").split('\t')#remove newlines
+            if(components[2].find(',')!=-1):
+                comp_right=components[2].replace(',',',\t').split('\t')
+                components=[components[0],components[1]]
+                for c in comp_right:
+                    components.append(c)
 
 
             #index

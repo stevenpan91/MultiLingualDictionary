@@ -1776,14 +1776,14 @@
         }
     },
     "1131": {
-        "WN00": {
+        "WБҮС00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "n.",
+            "Part Of Speech": "бүс",
             "Pronunciation": "",
             "Words": [
-                "тэлээ. бүс"
+                "тэлээ."
             ]
         }
     },
@@ -4140,11 +4140,11 @@
         }
     },
     "1309": {
-        "WNPALM,00": {
+        "WN00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "n.palm,",
+            "Part Of Speech": "n.",
             "Pronunciation": "",
             "Words": [
                 "алга"
@@ -8916,11 +8916,11 @@
         }
     },
     "1668": {
-        "WADJCHEAP00": {
+        "WADJ00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "adj.cheap",
+            "Part Of Speech": "adj.",
             "Pronunciation": "",
             "Words": [
                 "хямдхан"
@@ -11892,11 +11892,11 @@
         }
     },
     "1891": {
-        "WVTRADITION,00": {
+        "WV00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "v.tradition,",
+            "Part Of Speech": "v.",
             "Pronunciation": "",
             "Words": [
                 "уламжлал"
@@ -16176,11 +16176,11 @@
         }
     },
     "2211": {
-        "WVENVY00": {
+        "WV00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "v.envy",
+            "Part Of Speech": "v.",
             "Pronunciation": "",
             "Words": [
                 "атаархах"
@@ -18408,11 +18408,11 @@
         }
     },
     "238": {
-        "WNEXAMPLE00": {
+        "WN00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "n.example",
+            "Part Of Speech": "n.",
             "Pronunciation": "",
             "Words": [
                 "жишээ"
@@ -32292,11 +32292,11 @@
         }
     },
     "521": {
-        "WVSUGGEST00": {
+        "WV00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "v.suggest",
+            "Part Of Speech": "v.",
             "Pronunciation": "",
             "Words": [
                 "санал болгож байна"
@@ -32304,11 +32304,11 @@
         }
     },
     "522": {
-        "WVCLEAN00": {
+        "WV00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "v.clean",
+            "Part Of Speech": "v.",
             "Pronunciation": "",
             "Words": [
                 "цэвэр"
@@ -32352,11 +32352,11 @@
         }
     },
     "526": {
-        "WVRISE,TO00": {
+        "WV00": {
             "Case/Tense": "",
             "Definition": "",
             "Example Sentences": "",
-            "Part Of Speech": "v.rise,to",
+            "Part Of Speech": "v.",
             "Pronunciation": "",
             "Words": [
                 "босох"

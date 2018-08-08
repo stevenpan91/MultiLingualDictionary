@@ -1,1 +1,1 @@
-2	19	662WN00Words	радио2	19	1210WN00Words	рашаан2	19	402WADV00Words	рүү
+2	19	1210WN00Words	рашаан2	19	402WADV00Words	рүү2	19	662WN00Words	радио

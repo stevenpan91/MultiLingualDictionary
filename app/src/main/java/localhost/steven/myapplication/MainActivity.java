@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
 
     //this file has indices for quick lookup
     public void GetKeysFromLookupFile(HashMap<Integer,HashMap<String,String>>KeyResultMap,
-                                      ArrayList<String> KeyResults,String searchText,int langIndex){
+                                      ArrayList<String> KeyResults,String searchText,int langIndex,ArrayList<Integer> searchTextLangIndices){
         try {
             String letterIndex=getLetterIndex(searchText,langIndex);
             BufferedReader lookup = getIndexFile(langIndex,letterIndex);
@@ -230,8 +230,11 @@ public class MainActivity extends AppCompatActivity {
                         ) {
                     KeyResults.add(keys[2]);
                     AddToResultMap(KeyResultMap, Integer.valueOf(keys[0]), keys[2], keys[3]);
+                    //CheckKeyFile(KeyResultMap,keys[2],searchTextLangIndices);
                 }
             }
+
+            lookup.close();
         }
         catch(Exception e){
             //no one cares
@@ -300,8 +303,56 @@ public class MainActivity extends AppCompatActivity {
         return finalKey;
     }
 
-    //looks up index files based on word key
+
     public void CheckKeyFile(HashMap<Integer,HashMap<String,String>>KeyResultMap,
+                              String KeyResult,ArrayList<Integer> searchTextLangIndices){
+        try {
+
+            String keyIndex=GetKeyNumber(KeyResult);//let's say key result "s" starts with 934..., the key Index is "9"
+            //hash portion
+            int keyIndexNum=Integer.valueOf(keyIndex)/25;
+            keyIndex=String.valueOf(keyIndexNum);
+            if(KeyCheckedFlag[keyIndexNum]==false) { //because langIndex starts from 1 and array starts from 0
+
+                //code timing indicates lookup can take up to 1 millisecond
+                //by far the slowest single operation in this method.
+                //Reduce file lookup.
+                BufferedReader lookup = getIndexFile(-1, "Key" + keyIndex);
+                String line;
+
+                while ((line = lookup.readLine()) != null) {
+                    //keys[0] is lang index
+                    //keys[1] is letter index (A and a are "0" in English, B and b are "1" in English etc)
+                    //keys[2] is the json key
+                    //keys[3] is the actual word
+                    //TimeIt.start();
+                    String[] keys = line.split("\t");
+                    //searchTextLang indices means the original search text language(s)
+                    //Those have been added already during key search, so if the language matches the original
+                    //search text language(s) skip it
+
+                    //the language files we're looking in do not match the search text
+                    //but instead are target languages
+                    //For example we searched in English but now we're looking in Mongolian files
+                    if (KeyResults.contains(keys[2]) && !searchTextLangIndices.contains(Integer.valueOf(keys[0]))) {
+                        AddToResultMap(KeyResultMap, Integer.valueOf(keys[0]), keys[2], keys[3]);
+                    }
+
+                }
+                KeyCheckedFlag[keyIndexNum] = true;
+
+                lookup.close();
+            }
+
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+
+    //looks up index files based on word key
+    public void CheckKeyFiles(HashMap<Integer,HashMap<String,String>>KeyResultMap,
                               ArrayList<String> KeyResults,ArrayList<Integer> searchTextLangIndices){
         try {
 
@@ -379,10 +430,10 @@ public class MainActivity extends AppCompatActivity {
                 KeyResults = new ArrayList<>();//used to store all paths
                 //This will get all keys
                 for (int langIndex : searchTextLangIndices)
-                    GetKeysFromLookupFile(KeyResultMap, KeyResults, searchText, langIndex);//1 is English, 2 is Mongolian, 3 is Russian
+                    GetKeysFromLookupFile(KeyResultMap, KeyResults, searchText, langIndex,searchTextLangIndices);//1 is English, 2 is Mongolian, 3 is Russian
 
                 //Now to connect strings by key
-                CheckKeyFile(KeyResultMap,KeyResults,searchTextLangIndices);
+                CheckKeyFiles(KeyResultMap,KeyResults,searchTextLangIndices);
 
                 //copy this first round search into memory so that it will be faster if
                 //letters are added or deleted. This prevents having to reopen files
@@ -401,18 +452,26 @@ public class MainActivity extends AppCompatActivity {
                         String thisKeyResult = KeyResults.get(i);
                         boolean keyRemoved = false;
 
+                        //only delete if all langs in searchTextLang don't match this new word
+                        int deleteFlag=0;
                         for (int langIndex : searchTextLangIndices) {
-                            if (!KeyResultMap.get(langIndex).get(thisKeyResult).contains(searchText)) {
-                                if (KeyResultMap.get(langIndex).containsKey(thisKeyResult)) {
-                                    KeyResults.remove(thisKeyResult);
+                            if (KeyResultMap.get(langIndex).get(thisKeyResult)==null)
+                                deleteFlag++;
+                            else if(!KeyResultMap.get(langIndex).get(thisKeyResult).contains(searchText))
+                                deleteFlag++;
 
-                                    for (int langIndex2 = langStart; langIndex2 <= langEnd; langIndex2++)
-                                        KeyResultMap.get(langIndex2).remove(thisKeyResult);
-
-                                    keyRemoved = true;
-                                }
-                            }
                         }
+
+                        if (deleteFlag==searchTextLangIndices.size()){
+                            KeyResults.remove(thisKeyResult);
+
+                            for (int langIndex2 = langStart; langIndex2 <= langEnd; langIndex2++)
+                                KeyResultMap.get(langIndex2).remove(thisKeyResult);
+
+                            keyRemoved = true;
+                        }
+
+
 
                         if (keyRemoved)
                             i--; //check the new key at this position
