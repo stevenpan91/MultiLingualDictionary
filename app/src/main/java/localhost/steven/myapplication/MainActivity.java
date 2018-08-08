@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initSearchResults=new ArrayList<SearchResultLine>();
+        initSearchResults=new ArrayList<>();
         resultIndex=0;
         mainLayout=(RelativeLayout) findViewById(R.id.mainscreen);
 
@@ -79,9 +80,11 @@ public class MainActivity extends AppCompatActivity {
 
         mainLayout.addView(searchBar);
 
-
-
+        langCount=3;
+        KeyCheckedFlag=new boolean[100];//for each lang
     }
+
+    private int langCount;
 
     public char[] EnglishLetters={'A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i',
             'J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r',
@@ -183,11 +186,16 @@ public class MainActivity extends AppCompatActivity {
 
     public BufferedReader getIndexFile(int langIndex, String letterIndex){
         try {
+            //first part of filename
+            String firstPart="";
+            if(langIndex>0) {
+                firstPart=String.valueOf(langIndex) + "-";
+            }
+
             return new BufferedReader(
                     new InputStreamReader(
                             getApplicationContext().getAssets().
-                                    open("LookupIndex" + String.valueOf(langIndex) + "-" +
-                                            letterIndex + ".txt")
+                                    open("LookupIndex" + firstPart + letterIndex + ".txt")
                     )
             );
         }
@@ -248,29 +256,97 @@ public class MainActivity extends AppCompatActivity {
         return retArray;
     }
 
-    public void CheckThisFile(HashMap<Integer,HashMap<String,String>>KeyResultMap,
-                              ArrayList<String> KeyResults,int langIndex, String letterIndex){
+    public boolean[] KeyCheckedFlag;
+
+    //used to time code
+    public static class TimeIt{
+        static long startTime;
+        static long endTime;
+        static long duration;
+
+        public static void start(){
+            startTime=System.nanoTime();
+        }
+
+        public static void stop(String section){
+            endTime=System.nanoTime();
+            duration=(endTime-startTime)/1000; //to microseconds
+            Log.d(" Runtime, Sec-"+section+" :",Long.toString(duration));
+        }
+    }
+
+    public static boolean isNumeric(String str)
+    {
+        try
+        {
+            double d = Double.parseDouble(str);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    public String GetKeyNumber(String key){
+        int iter=0;
+        String finalKey="";
+
+        while(isNumeric(Character.toString(key.charAt(iter)))
+                && iter<key.length()) {
+            finalKey += Character.toString(key.charAt(iter));
+            iter++;
+        }
+        return finalKey;
+    }
+
+    //looks up index files based on word key
+    public void CheckKeyFile(HashMap<Integer,HashMap<String,String>>KeyResultMap,
+                              ArrayList<String> KeyResults,ArrayList<Integer> searchTextLangIndices){
         try {
 
-            BufferedReader lookup = getIndexFile(langIndex,letterIndex);
-            String line;
 
-            while ((line = lookup.readLine()) != null) {
-                //keys[0] is lang index
-                //keys[1] is letter index (A and a are "0" in English, B and b are "1" in English etc)
-                //keys[2] is the json key
-                //keys[3] is the actual word
-                String[] keys = line.split("\t");
-                if (KeyResults.contains(keys[2])) {
-                    AddToResultMap(KeyResultMap,Integer.valueOf(keys[0]),keys[2],keys[3]);
+            for(String s : KeyResults) {
+                String keyIndex=GetKeyNumber(s);//let's say key result "s" starts with 934..., the key Index is "9"
+                //hash portion
+                int keyIndexNum=Integer.valueOf(keyIndex)/50;
+                keyIndex=String.valueOf(keyIndexNum);
+                if(KeyCheckedFlag[keyIndexNum]==false) { //because langIndex starts from 1 and array starts from 0
+
+                    //code timing indicates lookup can take up to 1 millisecond
+                    //by far the slowest single operation in this method.
+                    //Reduce file lookup.
+                    BufferedReader lookup = getIndexFile(-1, "Key" + keyIndex);
+                    String line;
+
+                    while ((line = lookup.readLine()) != null) {
+                        //keys[0] is lang index
+                        //keys[1] is letter index (A and a are "0" in English, B and b are "1" in English etc)
+                        //keys[2] is the json key
+                        //keys[3] is the actual word
+                        //TimeIt.start();
+                        String[] keys = line.split("\t");
+                        //searchTextLang indices means the original search text language(s)
+                        //Those have been added already during key search, so if the language matches the original
+                        //search text language(s) skip it
+
+                        //the language files we're looking in do not match the search text
+                        //but instead are target languages
+                        //For example we searched in English but now we're looking in Mongolian files
+                        if (KeyResults.contains(keys[2]) && !searchTextLangIndices.contains(Integer.valueOf(keys[0]))) {
+                            AddToResultMap(KeyResultMap, Integer.valueOf(keys[0]), keys[2], keys[3]);
+                        }
+
+                    }
+                    KeyCheckedFlag[keyIndexNum] = true;
                 }
-
             }
 
         } catch (Exception e) {
-            //no one cares
+            System.out.println(e);
         }
     }
+
 
     private ArrayList<String> KeyResultsFirstRound;//hold first round search results
     private HashMap<Integer, HashMap<String, String>> KeyResultMapFirstRound; //hold first round search results
@@ -280,7 +356,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void TraverseJSON(String searchText){
-        //if(searchText!=null && searchText!="" && searchText.length()>0) {
         if(searchText.length()==0) {
             KeyResultMap = null;
             KeyResults = null;//used to store all paths
@@ -289,48 +364,34 @@ public class MainActivity extends AppCompatActivity {
             ArrayList<Integer> searchTextLangIndices = langIndices(searchText);
             String KeyResult = "";//used to check path
 
-            int langStart = 1; //English
-            int langEnd = 3;//Russian
+            int langStart = 1; //1 is English
+            int langEnd = langCount;//3 is Russian
 
             //only need to get the keys when the search text is one letter
 
             if (searchText.length() == 1 && KeyResults == null) { // key finding is very expensive, only do it on the first letter
-
+                KeyCheckedFlag=new boolean[100]; //reset KeyCheckedFlag
                 KeyResultMap = new HashMap<>();
 
                 for (int langIndex = langStart; langIndex <= langEnd; langIndex++)
                     KeyResultMap.put(langIndex, new HashMap<String, String>()); //new hashmap for each lang
 
-                KeyResults = new ArrayList<String>();//used to store all paths
+                KeyResults = new ArrayList<>();//used to store all paths
                 //This will get all keys
                 for (int langIndex : searchTextLangIndices)
                     GetKeysFromLookupFile(KeyResultMap, KeyResults, searchText, langIndex);//1 is English, 2 is Mongolian, 3 is Russian
 
                 //Now to connect strings by key
-                for (int langIndex = langStart; langIndex <= langEnd; langIndex++) {
-                    //KeyResultMap.put(langIndex, new HashMap<String, String>()); //new hashmap for each lang
+                CheckKeyFile(KeyResultMap,KeyResults,searchTextLangIndices);
 
-                    //When getting the keys the search Text language already has the values added
-                    if (!searchTextLangIndices.contains(langIndex)) {
-                        //the language files we're looking in do not match the search text
-                        //but instead are target languages
-                        //For example we searched in English but now we're looking in Mongolian files
-                        //We have to go through all of the Mongolian files
-
-                        for (int eachLetterIndex = 1; eachLetterIndex <= getAmountOfLetters(langIndex); eachLetterIndex++) {
-                            CheckThisFile(KeyResultMap, KeyResults, langIndex, String.valueOf(eachLetterIndex));
-                        }
-
-                        CheckThisFile(KeyResultMap, KeyResults, langIndex, "None"); //non letter searches will match to "None"
-                    }
-                }//go through each lang
-
+                //copy this first round search into memory so that it will be faster if
+                //letters are added or deleted. This prevents having to reopen files
                 KeyResultsFirstRound = CloneKeyResults(KeyResults);
                 KeyResultMapFirstRound = CloneKeyResultMap(KeyResultMap);
 
             } else {
+                //Use in memory results
                 //KeyResults have been initialized, eliminate ones without searchText
-
                 KeyResults = CloneKeyResults(KeyResultsFirstRound);
                 KeyResultMap = CloneKeyResultMap(KeyResultMapFirstRound);
 
@@ -386,7 +447,7 @@ public class MainActivity extends AppCompatActivity {
                 AddToResultList(SearchResult);
             } //put all results in blocks
         }
-        //}
+
     }
 
     public ArrayList<String> CloneKeyResults(ArrayList<String> source){
