@@ -486,10 +486,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-
+            //JSONArray SearchResult = new JSONArray();
+            ArrayList<String> SearchResult=new ArrayList<>();
             for (int i = 0; i < KeyResults.size(); i++) {
                 KeyResult = KeyResults.get(i);
-                JSONArray SearchResult = new JSONArray();
+
 
                 StringBuilder SearchResultString = new StringBuilder();
                 SearchResultString.append("Eng: ");
@@ -508,10 +509,15 @@ public class MainActivity extends AppCompatActivity {
                 SearchResultString.append(KeyResultMap.get(3).get(KeyResult));
 
                 if (SearchResultString.toString() != "") {
-                    SearchResult.put(SearchResultString.toString());
+                    //SearchResult.put(SearchResultString.toString());
+                    //SearchResult.add(SearchResultString.toString());
+                    initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, SearchResultString.toString()));
+                    resultIndex++;
                 }
-                AddToResultList(SearchResult);
+
             } //put all results in blocks
+
+            //AddToResultList(SearchResult);
         }
 
     }
@@ -541,17 +547,32 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void AddToResultList(JSONArray theJSONArray) {
-        try {
-            for(int i=0;i<theJSONArray.length();i++) {
-                initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, theJSONArray.get(i).toString()));
+//    public void AddToResultList(JSONArray theJSONArray) {
+//        try {
+//            for(int i=0;i<theJSONArray.length();i++) {
+//                initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, theJSONArray.get(i).toString()));
+//                resultIndex++;
+//            }
+//        }
+//        catch(JSONException e){
+//            e.printStackTrace();
+//        }
+//    }
+
+
+    public void AddToResultList(ArrayList<String> theResults) {
+        //try {
+            for(int i=0;i<theResults.size();i++) {
+                initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, theResults.get(i)));
                 resultIndex++;
             }
-        }
-        catch(JSONException e){
-            e.printStackTrace();
-        }
+        //}
+        //catch(JSONException e){
+        //    e.printStackTrace();
+        //}
     }
+
+
 
     public String loadJSONFromAsset(Context context,String fileName) {
         String json = null;
