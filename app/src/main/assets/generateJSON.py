@@ -8,12 +8,19 @@ if __name__=='__main__':
     dataRu={}
     with open('MoToEng.txt') as f:
         for line in f:
-            print(line)
-            components=line.replace('\n','').replace(". ",".\t").split('\t')#remove newlines
+            #print(line)
+            #remove new line, add a tab to the front of part of speech then split
+            components=line.replace('\n','').replace(". ",".\t").split('\t')
             if(components[2].find(',')!=-1):
-                comp_right=components[2].replace(',',',\t').split('\t')
+                #components[2] and beyond are the eng definitions for mongolian words
+                #',' indicates there's more than one definition
+                #replace this comma with a tab then split.
+                #comp_right consists of definitions in english for mongolian words
+                comp_right=components[2].replace(',','\t').split('\t')
                 components=[components[0],components[1]]
                 for c in comp_right:
+                    if c[0]==" ":
+                        c=c[1:] #add definitions back after removing first space
                     components.append(c)
 
 

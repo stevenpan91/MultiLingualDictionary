@@ -18,6 +18,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -80,11 +81,30 @@ public class MainActivity extends AppCompatActivity {
 
         mainLayout.addView(searchBar);
 
+        wordCount=3221;
+        indexSeparationPoint=25;//words of each lang in each file
+        indexCount=wordCount/indexSeparationPoint+1;
         langCount=3;
-        KeyCheckedFlag=new boolean[100];//for each lang
-    }
+        KeyCheckedFlag=new boolean[indexCount];//for each lang
 
+        IndexMapFull=new HashMap<>();
+        for (int langIndex = 1; langIndex <= langCount; langIndex++) {
+            IndexMapFull.put(langIndex, new HashMap<String, HashMap<String, String>>()); //new hashmap for each lang
+            for(int eachLetter=1;eachLetter<=getAmountOfLetters(langIndex);eachLetter++)
+            {
+                HashMap<String, HashMap<String, String>> innerMap=IndexMapFull.get(langIndex);
+                innerMap.put(String.valueOf(eachLetter),new HashMap<String,String>());//add for each letter
+                innerMap.put("None",new HashMap<String,String>());
+                IndexMapFull.put(langIndex,innerMap);
+            }
+        }
+        IndexMapKeyFirst=new HashMap();
+        PullIndicesIntoMemory();
+    }
+    private int indexCount;
+    private int wordCount;
     private int langCount;
+    private int indexSeparationPoint;
 
     public char[] EnglishLetters={'A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i',
             'J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r',
@@ -156,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
         TraverseJSON(searchText);
     }
 
+
     public String getLetterIndex(String theWord,int langIndex) {
         char firstLetter = theWord.charAt(0);
         switch (langIndex) {
@@ -191,13 +212,15 @@ public class MainActivity extends AppCompatActivity {
             if(langIndex>0) {
                 firstPart=String.valueOf(langIndex) + "-";
             }
-
+            if(Arrays.asList(getResources().getAssets().list("")).contains("LookupIndex" + firstPart + letterIndex + ".txt"))
             return new BufferedReader(
                     new InputStreamReader(
                             getApplicationContext().getAssets().
                                     open("LookupIndex" + firstPart + letterIndex + ".txt")
                     )
             );
+
+            return null;
         }
         catch(Exception e){
             return null;
@@ -214,27 +237,25 @@ public class MainActivity extends AppCompatActivity {
         KeyResultMap.put(langIndex, innerMap); //empty string for now
     }
 
-    //this file has indices for quick lookup
-    public void GetKeysFromLookupFile(HashMap<Integer,HashMap<String,String>>KeyResultMap,
-                                      ArrayList<String> KeyResults,String searchText,int langIndex,ArrayList<Integer> searchTextLangIndices){
+    //get all keys from memory map
+    public void GetKeysFromMemoryMap(String searchText,int langIndex){
         try {
+            //check which letter of alphabet of this language it belongs to
             String letterIndex=getLetterIndex(searchText,langIndex);
-            BufferedReader lookup = getIndexFile(langIndex,letterIndex);
-
-            String line;
-            while ((line = lookup.readLine()) != null)
+            for(String s: IndexMapFull.get(langIndex).get(letterIndex).keySet())
             {
-                String[] keys=line.split("\t");
-                if(keys[0].equals(String.valueOf(langIndex)) && keys[1].equals(String.valueOf(letterIndex))
-                        && keys[3].contains(searchText)
-                        ) {
-                    KeyResults.add(keys[2]);
-                    AddToResultMap(KeyResultMap, Integer.valueOf(keys[0]), keys[2], keys[3]);
-                    //CheckKeyFile(KeyResultMap,keys[2],searchTextLangIndices);
+                if(!KeyResultMap.get(langIndex).containsKey(s) &&
+                    IndexMapFull.get(langIndex).get(letterIndex).get(s).contains(searchText)) {
+
+                    //add to key results
+                    KeyResults.add(s);
+
+                    //add lang index, key, then word
+                    AddToResultMap(KeyResultMap, langIndex, s,
+                                   IndexMapKeyFirst.get(s).get(langIndex));
+
                 }
             }
-
-            lookup.close();
         }
         catch(Exception e){
             //no one cares
@@ -303,21 +324,12 @@ public class MainActivity extends AppCompatActivity {
         return finalKey;
     }
 
-
-    public void CheckKeyFile(HashMap<Integer,HashMap<String,String>>KeyResultMap,
-                              String KeyResult,ArrayList<Integer> searchTextLangIndices){
+    public void PullIndicesIntoMemory(){
         try {
-
-            String keyIndex=GetKeyNumber(KeyResult);//let's say key result "s" starts with 934..., the key Index is "9"
-            //hash portion
-            int keyIndexNum=Integer.valueOf(keyIndex)/25;
-            keyIndex=String.valueOf(keyIndexNum);
-            if(KeyCheckedFlag[keyIndexNum]==false) { //because langIndex starts from 1 and array starts from 0
-
                 //code timing indicates lookup can take up to 1 millisecond
                 //by far the slowest single operation in this method.
                 //Reduce file lookup.
-                BufferedReader lookup = getIndexFile(-1, "Key" + keyIndex);
+                BufferedReader lookup = getIndexFile(-1, "");//look up the fully put together index
                 String line;
 
                 while ((line = lookup.readLine()) != null) {
@@ -327,22 +339,44 @@ public class MainActivity extends AppCompatActivity {
                     //keys[3] is the actual word
                     //TimeIt.start();
                     String[] keys = line.split("\t");
-                    //searchTextLang indices means the original search text language(s)
-                    //Those have been added already during key search, so if the language matches the original
-                    //search text language(s) skip it
+                    String keyValue=keys[2];
+                    String actualWord=keys[3];
+                    int langIndex = Integer.valueOf(keys[0]);
 
-                    //the language files we're looking in do not match the search text
-                    //but instead are target languages
-                    //For example we searched in English but now we're looking in Mongolian files
-                    if (KeyResults.contains(keys[2]) && !searchTextLangIndices.contains(Integer.valueOf(keys[0]))) {
-                        AddToResultMap(KeyResultMap, Integer.valueOf(keys[0]), keys[2], keys[3]);
+                    String[] allWords=actualWord.split(",");//if word has commas, get all of them
+                    for(String word:allWords) {
+
+                        String letterIndex = getLetterIndex(word, langIndex);
+
+                        //letter pointing at key
+                        HashMap<String, HashMap<String, String>> innerMap = IndexMapFull.get(langIndex);
+                        //key pointing at actual word
+                        HashMap<String, String> innerInnerMap = innerMap.get(letterIndex);
+
+
+                        if (!innerInnerMap.containsKey(keyValue))
+                            innerInnerMap.put(keyValue, "");//initialize the map entry if it doesn't exist
+
+                        innerInnerMap.put(keyValue, innerInnerMap.get(keyValue) + word);
+                        innerMap.put(letterIndex, innerInnerMap);
+
+                        IndexMapFull.put(langIndex, innerMap); //empty string for now
                     }
 
+                    //now add to key first map for lookup
+                    //add key if it doesn't exist
+                    if(!IndexMapKeyFirst.containsKey(keyValue))
+                    {
+                        IndexMapKeyFirst.put(keyValue,new HashMap<Integer,String>());
+                    }
+                    HashMap<Integer,String> KFInnerMap=IndexMapKeyFirst.get(keyValue);
+                    KFInnerMap.put(langIndex,actualWord);
+                    IndexMapKeyFirst.put(keyValue,KFInnerMap);
+
                 }
-                KeyCheckedFlag[keyIndexNum] = true;
 
                 lookup.close();
-            }
+
 
 
         } catch (Exception e) {
@@ -351,47 +385,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //looks up index files based on word key
-    public void CheckKeyFiles(HashMap<Integer,HashMap<String,String>>KeyResultMap,
-                              ArrayList<String> KeyResults,ArrayList<Integer> searchTextLangIndices){
+    //get word based on key and language from memory map
+    public void CheckMemoryMap(ArrayList<Integer> searchTextLangIndices){
         try {
 
-
-            for(String s : KeyResults) {
-                String keyIndex=GetKeyNumber(s);//let's say key result "s" starts with 934..., the key Index is "9"
-                //hash portion
-                int keyIndexNum=Integer.valueOf(keyIndex)/50;
-                keyIndex=String.valueOf(keyIndexNum);
-                if(KeyCheckedFlag[keyIndexNum]==false) { //because langIndex starts from 1 and array starts from 0
-
-                    //code timing indicates lookup can take up to 1 millisecond
-                    //by far the slowest single operation in this method.
-                    //Reduce file lookup.
-                    BufferedReader lookup = getIndexFile(-1, "Key" + keyIndex);
-                    String line;
-
-                    while ((line = lookup.readLine()) != null) {
-                        //keys[0] is lang index
-                        //keys[1] is letter index (A and a are "0" in English, B and b are "1" in English etc)
-                        //keys[2] is the json key
-                        //keys[3] is the actual word
-                        //TimeIt.start();
-                        String[] keys = line.split("\t");
-                        //searchTextLang indices means the original search text language(s)
-                        //Those have been added already during key search, so if the language matches the original
-                        //search text language(s) skip it
-
-                        //the language files we're looking in do not match the search text
-                        //but instead are target languages
-                        //For example we searched in English but now we're looking in Mongolian files
-                        if (KeyResults.contains(keys[2]) && !searchTextLangIndices.contains(Integer.valueOf(keys[0]))) {
-                            AddToResultMap(KeyResultMap, Integer.valueOf(keys[0]), keys[2], keys[3]);
-                        }
-
-                    }
-                    KeyCheckedFlag[keyIndexNum] = true;
-                }
-            }
+            //memory search
+            for(String s : KeyResults)
+                for(int i=1; i<=langCount;i++)
+                    //the search text language results have already been added
+                    //during the key find stage. only add the other languages
+                    if(!searchTextLangIndices.contains(i))
+                        AddToResultMap(KeyResultMap, i, s, IndexMapKeyFirst.get(s).get(i));
 
         } catch (Exception e) {
             System.out.println(e);
@@ -405,6 +409,9 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> KeyResults;
     private HashMap<Integer, HashMap<String, String>> KeyResultMap;
 
+    //letter may be "None" so second index must be String not int
+    private HashMap<Integer, HashMap<String,HashMap<String, String>>> IndexMapFull;
+    private HashMap<String, HashMap<Integer, String>> IndexMapKeyFirst;
 
     public void TraverseJSON(String searchText){
         if(searchText.length()==0) {
@@ -421,7 +428,7 @@ public class MainActivity extends AppCompatActivity {
             //only need to get the keys when the search text is one letter
 
             if (searchText.length() == 1 && KeyResults == null) { // key finding is very expensive, only do it on the first letter
-                KeyCheckedFlag=new boolean[100]; //reset KeyCheckedFlag
+                KeyCheckedFlag=new boolean[indexCount]; //reset KeyCheckedFlag
                 KeyResultMap = new HashMap<>();
 
                 for (int langIndex = langStart; langIndex <= langEnd; langIndex++)
@@ -430,10 +437,10 @@ public class MainActivity extends AppCompatActivity {
                 KeyResults = new ArrayList<>();//used to store all paths
                 //This will get all keys
                 for (int langIndex : searchTextLangIndices)
-                    GetKeysFromLookupFile(KeyResultMap, KeyResults, searchText, langIndex,searchTextLangIndices);//1 is English, 2 is Mongolian, 3 is Russian
+                    GetKeysFromMemoryMap(searchText, langIndex);//1 is English, 2 is Mongolian, 3 is Russian
 
                 //Now to connect strings by key
-                CheckKeyFiles(KeyResultMap,KeyResults,searchTextLangIndices);
+                CheckMemoryMap(searchTextLangIndices);
 
                 //copy this first round search into memory so that it will be faster if
                 //letters are added or deleted. This prevents having to reopen files

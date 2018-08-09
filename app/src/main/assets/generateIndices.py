@@ -32,17 +32,17 @@ def checkEachKey(jsonData,index,thisKey,recDepth,langIndex,numIndex):
 
     if(recDepth>=3 and index=="Words" and len(jsonData)>0 and len(jsonData[0])>0):
         letterIndex=getLetterIndex(jsonData[0],langIndex)
-        writeFile=open('LookupIndex'+str(langValue)+"-"+str(letterIndex)+'.txt','a')
-        aggregateIndex.write(str(langIndex)+"\t"+str(letterIndex)+"\t"+thisKey+"\t"+jsonData[0]+"\r")
-        writeFile.write(str(langIndex)+"\t"+str(letterIndex)+"\t"+thisKey+"\t"+''.join(jsonData)+"\r")
-        writeFile.close()
+        #writeFile=open('LookupIndex'+str(langValue)+"-"+str(letterIndex)+'.txt','a')
+        aggregateIndex.write(str(langIndex)+"\t"+str(letterIndex)+"\t"+thisKey+"\t"+','.join(jsonData)+"\r")
+        #writeFile.write(str(langIndex)+"\t"+str(letterIndex)+"\t"+thisKey+"\t"+''.join(jsonData)+"\r")
+        #writeFile.close()
 
         #generate lookup indices based on key
-        key_index_num=int(numIndex)
-        key_index=str(key_index_num//25) #store by 50s x amount of langs
-        writeFile=open('LookupIndex'+"Key"+key_index+'.txt','a') #put all from same language in same file
-        writeFile.write(str(langIndex)+"\t"+str(letterIndex)+"\t"+thisKey+"\t"+''.join(jsonData)+"\r")
-        writeFile.close()
+        #key_index_num=int(numIndex)
+        #key_index=str(key_index_num//25) #store by 50s x amount of langs
+        #writeFile=open('LookupIndex'+"Key"+key_index+'.txt','a') #put all from same language in same file
+        #writeFile.write(str(langIndex)+"\t"+str(letterIndex)+"\t"+thisKey+"\t"+''.join(jsonData)+"\r")
+        #writeFile.close()
 
 def getLetterIndex(theWord,langIndex):
     firstLetter=theWord[0]
