@@ -3,14 +3,20 @@ package localhost.steven.myapplication;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.AssetManager;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -34,8 +40,9 @@ public class MainActivity extends AppCompatActivity {
     static {
         System.loadLibrary("native-lib");
     }
-
+    ScrollView theScrollView;
     RelativeLayout mainLayout;
+    //LinearLayout mainLayout;
     int resultIndex;
     List<SearchResultLine> initSearchResults;
     EditText searchBar;
@@ -46,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         initSearchResults=new ArrayList<>();
         resultIndex=0;
         mainLayout=(RelativeLayout) findViewById(R.id.mainscreen);
+        theScrollView=(ScrollView)findViewById(R.id.ScrollView01);
 
         // Example of a call to a native method
         //TextView tv = (TextView) findViewById(R.id.sample_text);
@@ -394,9 +402,20 @@ public class MainActivity extends AppCompatActivity {
                 for(int i=1; i<=langCount;i++)
                     //the search text language results have already been added
                     //during the key find stage. only add the other languages
-                    if(!searchTextLangIndices.contains(i))
+                    if(!searchTextLangIndices.contains(i)) {
                         AddToResultMap(KeyResultMap, i, s, IndexMapKeyFirst.get(s).get(i));
 
+//                        SearchResultLine thisLine = new SearchResultLine(this, resultIndex, mainLayout, IndexMapKeyFirst.get(s).get(i));
+//                        mainLayout.addView(thisLine.mainText);
+//                        initSearchResults.add(thisLine);
+//                        findViewById(R.id.ScrollView01).invalidate();
+//                        findViewById(R.id.ScrollView01).requestLayout();
+//                        mainLayout.invalidate();
+//                        mainLayout.requestLayout();
+//                        //mainLayout.forceLayout();//force update
+//                        initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, IndexMapKeyFirst.get(s).get(i)));
+//                        resultIndex++;
+                    }
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -511,8 +530,45 @@ public class MainActivity extends AppCompatActivity {
                 if (SearchResultString.toString() != "") {
                     //SearchResult.put(SearchResultString.toString());
                     //SearchResult.add(SearchResultString.toString());
-                    initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, SearchResultString.toString()));
-                    resultIndex++;
+
+                    MainActivity.this.runOnUiThread(new Runnable() {
+                        private StringBuilder SearchResultString;
+                        private Context mainContext;
+
+                        private Runnable init(Context thisMainContext,StringBuilder thisSearchResultString){
+                            mainContext=thisMainContext;
+                            SearchResultString=thisSearchResultString;
+                            return this;
+                        }
+
+                        public void run() {
+                            SearchResultLine thisLine = new SearchResultLine(mainContext, resultIndex, mainLayout, SearchResultString.toString());
+                            mainLayout.addView(thisLine.mainText);
+                            mainLayout.setVisibility(View.VISIBLE);
+                            initSearchResults.add(thisLine);
+                            recreate();
+                            updateView();
+
+                            Message m = Message.obtain();
+                            m.what = UPDATE_TAG;
+                            mHandler.sendMessageDelayed(m,200);
+
+                            //initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, SearchResultString.toString()));
+                            resultIndex++;
+                        }
+                    }.init(this,SearchResultString));
+
+//                    SearchResultLine thisLine = new SearchResultLine(this, resultIndex, mainLayout, SearchResultString.toString());
+//                    mainLayout.addView(thisLine.mainText);
+//                    initSearchResults.add(thisLine);
+//                    updateView();
+//
+//                    Message m = Message.obtain();
+//                    m.what = UPDATE_TAG;
+//                    mHandler.sendMessageDelayed(m,200);
+//
+//                    //initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, SearchResultString.toString()));
+//                    resultIndex++;
                 }
 
             } //put all results in blocks
@@ -520,6 +576,43 @@ public class MainActivity extends AppCompatActivity {
             //AddToResultList(SearchResult);
         }
 
+    }
+
+    public void invalidateRecursive(ViewGroup layout) {
+        int count = layout.getChildCount();
+        View child;
+        for (int i = 0; i < count; i++) {
+            child = layout.getChildAt(i);
+            if(child instanceof ViewGroup)
+                invalidateRecursive((ViewGroup) child);
+            else {
+                child.invalidate();
+                child.requestLayout();
+            }
+        }
+    }
+
+    final int UPDATE_TAG=1;
+    Handler mHandler = new Handler(){
+        @Override
+        public void handleMessage(Message m) {
+            if(m.what == UPDATE_TAG) {
+                updateView();
+            }
+        }
+    };
+
+    public void updateView(){
+        //invalidateRecursive(mainLayout);
+        invalidateRecursive(theScrollView);
+
+        //findViewById(R.id.ScrollView01).invalidate();
+        //findViewById(R.id.ScrollView01).requestLayout();
+
+//        findViewById(R.id.mainscreen).invalidate();
+//        findViewById(R.id.mainscreen).requestLayout();
+//        initSearchResults.get(initSearchResults.size()-1).mainText.invalidate();
+//        initSearchResults.get(initSearchResults.size()-1).mainText.requestLayout();
     }
 
     public ArrayList<String> CloneKeyResults(ArrayList<String> source){
