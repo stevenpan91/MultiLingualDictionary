@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.AssetManager;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -13,8 +14,10 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -42,17 +45,26 @@ public class MainActivity extends AppCompatActivity {
     }
     ScrollView theScrollView;
     RelativeLayout mainLayout;
-    //LinearLayout mainLayout;
     int resultIndex;
-    List<SearchResultLine> initSearchResults;
+
+    ListView resultList;
+
+
     EditText searchBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initSearchResults=new ArrayList<>();
+
+        resultList=new ListView(this);
+        RelativeLayout.LayoutParams listParam = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+        listParam.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+        listParam.setMargins(0, 150, 0, 0);
+        resultList.setLayoutParams(listParam);
+
         resultIndex=0;
         mainLayout=(RelativeLayout) findViewById(R.id.mainscreen);
+        mainLayout.addView(resultList);
         theScrollView=(ScrollView)findViewById(R.id.ScrollView01);
 
         // Example of a call to a native method
@@ -76,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 RunSearch();
             }
         });
-        searchBar.setTextSize(12);
+        searchBar.setTextSize(16);
         searchBar.setHint("Search Word...");
 
         RelativeLayout.LayoutParams lineParam =
@@ -89,11 +101,9 @@ public class MainActivity extends AppCompatActivity {
 
         mainLayout.addView(searchBar);
 
-        wordCount=3221;
-        indexSeparationPoint=25;//words of each lang in each file
-        indexCount=wordCount/indexSeparationPoint+1;
+        //wordCount=3221;
         langCount=3;
-        KeyCheckedFlag=new boolean[indexCount];//for each lang
+        //KeyCheckedFlag=new boolean[indexCount];//for each lang
 
         IndexMapFull=new HashMap<>();
         for (int langIndex = 1; langIndex <= langCount; langIndex++) {
@@ -109,10 +119,9 @@ public class MainActivity extends AppCompatActivity {
         IndexMapKeyFirst=new HashMap();
         PullIndicesIntoMemory();
     }
-    private int indexCount;
-    private int wordCount;
+    //private int wordCount;
     private int langCount;
-    private int indexSeparationPoint;
+
 
     public char[] EnglishLetters={'A','a','B','b','C','c','D','d','E','e','F','f','G','g','H','h','I','i',
             'J','j','K','k','L','l','M','m','N','n','O','o','P','p','Q','q','R','r',
@@ -175,10 +184,12 @@ public class MainActivity extends AppCompatActivity {
         *
         *
          */
-        for(int clearResults=0; clearResults<initSearchResults.size();clearResults++)
-            mainLayout.removeView(initSearchResults.get(clearResults).mainText);
 
-        initSearchResults.clear();
+        //reset list view
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, android.R.id.text1, new ArrayList<String>());
+        resultList.setAdapter(adapter);
+
         resultIndex=0;
         String searchText = searchBar.getText().toString();
         TraverseJSON(searchText);
@@ -288,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
         return retArray;
     }
 
-    public boolean[] KeyCheckedFlag;
+    //public boolean[] KeyCheckedFlag;
 
     //used to time code
     public static class TimeIt{
@@ -404,17 +415,6 @@ public class MainActivity extends AppCompatActivity {
                     //during the key find stage. only add the other languages
                     if(!searchTextLangIndices.contains(i)) {
                         AddToResultMap(KeyResultMap, i, s, IndexMapKeyFirst.get(s).get(i));
-
-//                        SearchResultLine thisLine = new SearchResultLine(this, resultIndex, mainLayout, IndexMapKeyFirst.get(s).get(i));
-//                        mainLayout.addView(thisLine.mainText);
-//                        initSearchResults.add(thisLine);
-//                        findViewById(R.id.ScrollView01).invalidate();
-//                        findViewById(R.id.ScrollView01).requestLayout();
-//                        mainLayout.invalidate();
-//                        mainLayout.requestLayout();
-//                        //mainLayout.forceLayout();//force update
-//                        initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, IndexMapKeyFirst.get(s).get(i)));
-//                        resultIndex++;
                     }
         } catch (Exception e) {
             System.out.println(e);
@@ -447,7 +447,7 @@ public class MainActivity extends AppCompatActivity {
             //only need to get the keys when the search text is one letter
 
             if (searchText.length() == 1 && KeyResults == null) { // key finding is very expensive, only do it on the first letter
-                KeyCheckedFlag=new boolean[indexCount]; //reset KeyCheckedFlag
+                //KeyCheckedFlag=new boolean[indexCount]; //reset KeyCheckedFlag
                 KeyResultMap = new HashMap<>();
 
                 for (int langIndex = langStart; langIndex <= langEnd; langIndex++)
@@ -505,7 +505,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-            //JSONArray SearchResult = new JSONArray();
+
             ArrayList<String> SearchResult=new ArrayList<>();
             for (int i = 0; i < KeyResults.size(); i++) {
                 KeyResult = KeyResults.get(i);
@@ -528,92 +528,16 @@ public class MainActivity extends AppCompatActivity {
                 SearchResultString.append(KeyResultMap.get(3).get(KeyResult));
 
                 if (SearchResultString.toString() != "") {
-                    //SearchResult.put(SearchResultString.toString());
-                    //SearchResult.add(SearchResultString.toString());
-
-                    MainActivity.this.runOnUiThread(new Runnable() {
-                        private StringBuilder SearchResultString;
-                        private Context mainContext;
-
-                        private Runnable init(Context thisMainContext,StringBuilder thisSearchResultString){
-                            mainContext=thisMainContext;
-                            SearchResultString=thisSearchResultString;
-                            return this;
-                        }
-
-                        public void run() {
-                            SearchResultLine thisLine = new SearchResultLine(mainContext, resultIndex, mainLayout, SearchResultString.toString());
-                            mainLayout.addView(thisLine.mainText);
-                            mainLayout.setVisibility(View.VISIBLE);
-                            initSearchResults.add(thisLine);
-                            recreate();
-                            updateView();
-
-                            Message m = Message.obtain();
-                            m.what = UPDATE_TAG;
-                            mHandler.sendMessageDelayed(m,200);
-
-                            //initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, SearchResultString.toString()));
-                            resultIndex++;
-                        }
-                    }.init(this,SearchResultString));
-
-//                    SearchResultLine thisLine = new SearchResultLine(this, resultIndex, mainLayout, SearchResultString.toString());
-//                    mainLayout.addView(thisLine.mainText);
-//                    initSearchResults.add(thisLine);
-//                    updateView();
-//
-//                    Message m = Message.obtain();
-//                    m.what = UPDATE_TAG;
-//                    mHandler.sendMessageDelayed(m,200);
-//
-//                    //initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, SearchResultString.toString()));
-//                    resultIndex++;
+                    SearchResult.add(SearchResultString.toString());
                 }
 
             } //put all results in blocks
 
-            //AddToResultList(SearchResult);
+            AddToResultList(SearchResult);
         }
 
     }
 
-    public void invalidateRecursive(ViewGroup layout) {
-        int count = layout.getChildCount();
-        View child;
-        for (int i = 0; i < count; i++) {
-            child = layout.getChildAt(i);
-            if(child instanceof ViewGroup)
-                invalidateRecursive((ViewGroup) child);
-            else {
-                child.invalidate();
-                child.requestLayout();
-            }
-        }
-    }
-
-    final int UPDATE_TAG=1;
-    Handler mHandler = new Handler(){
-        @Override
-        public void handleMessage(Message m) {
-            if(m.what == UPDATE_TAG) {
-                updateView();
-            }
-        }
-    };
-
-    public void updateView(){
-        //invalidateRecursive(mainLayout);
-        invalidateRecursive(theScrollView);
-
-        //findViewById(R.id.ScrollView01).invalidate();
-        //findViewById(R.id.ScrollView01).requestLayout();
-
-//        findViewById(R.id.mainscreen).invalidate();
-//        findViewById(R.id.mainscreen).requestLayout();
-//        initSearchResults.get(initSearchResults.size()-1).mainText.invalidate();
-//        initSearchResults.get(initSearchResults.size()-1).mainText.requestLayout();
-    }
 
     public ArrayList<String> CloneKeyResults(ArrayList<String> source){
         ArrayList<String> target=new ArrayList<>();
@@ -639,30 +563,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-//    public void AddToResultList(JSONArray theJSONArray) {
-//        try {
-//            for(int i=0;i<theJSONArray.length();i++) {
-//                initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, theJSONArray.get(i).toString()));
-//                resultIndex++;
-//            }
-//        }
-//        catch(JSONException e){
-//            e.printStackTrace();
-//        }
-//    }
-
-
     public void AddToResultList(ArrayList<String> theResults) {
-        //try {
-            for(int i=0;i<theResults.size();i++) {
-                initSearchResults.add(new SearchResultLine(this, resultIndex, mainLayout, theResults.get(i)));
-                resultIndex++;
-            }
-        //}
-        //catch(JSONException e){
-        //    e.printStackTrace();
-        //}
+        if(Looper.myLooper() == Looper.getMainLooper()) {
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                    android.R.layout.simple_list_item_1, android.R.id.text1, theResults);
+            resultList.setAdapter(adapter);
+        }
+
+        else {
+            MainActivity.this.runOnUiThread(new Runnable() {
+                private ArrayList<String> theResults;
+                private Context mainContext;
+
+                private Runnable init(Context thisMainContext, ArrayList<String> theseResults) {
+                    mainContext = thisMainContext;
+                    theResults = theseResults;
+                    return this;
+                }
+
+                public void run() {
+                    ArrayAdapter<String> adapter = new ArrayAdapter<>(mainContext,
+                            android.R.layout.simple_list_item_1, android.R.id.text1, theResults);
+                    resultList.setAdapter(adapter);
+                }
+            }.init(this, theResults));
+        }
     }
 
 
