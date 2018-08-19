@@ -3,7 +3,10 @@
 gradlew
 gradlew.bat
 gradle/*
+app/release/*
 .idea
+*.png
+*.jpg
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries

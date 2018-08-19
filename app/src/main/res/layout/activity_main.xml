@@ -35,6 +35,21 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp"
         tools:context="localhost.steven.chemicalengineerhelper.CalculateScreen">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+        <!--Test Ad-->
+        <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111">-->
+        <!--Actual Ad-->
+        <!--ads:adUnitId="ca-app-pub-4323435087420219/5650430432">-->
     </RelativeLayout>
 </ScrollView>
 </android.support.constraint.ConstraintLayout>
